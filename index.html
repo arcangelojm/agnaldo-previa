@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<!-- MODELO: home (Etapa 15, 19/11/2026). Comentários FIXO = igual em todas as páginas; VARIA = muda por página.
+     Marcação, classes e componentes seguem o modelo de referência do kit (mesmo assets/css/style.css); todo o conteúdo vem de docs/ deste projeto.
+     Pendências visíveis: [PREENCHER: ...] e [CONFIRMAR C-xx]. Seções que dependem só de prova real ficam como comentário SECAO-PENDENTE (campo publicacao do 07). -->
+<html lang="pt-BR">
+<head>
+<!-- FIXO: meta base, fonte, CSS, ícones e entitymap -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- VARIA: title, description, canonical e Open Graph da linha P01 da tabela-mestre (docs/05-arquitetura.md). Domínio: [PREENCHER C-08]. og:image aponta para /assets/img/og/padrao.webp, pendente em docs/imagens-plano.json (C-27/C-28), como nas páginas internas. -->
+<title>Agnaldo Higienização | Limpeza de sofá, tapetes e cortinas</title>
+<meta name="description" content="Agnaldo Higienização: limpeza de sofá, tapetes e cortinas em Cuiabá e Várzea Grande, com sede em Várzea Grande. Mande fotos e receba o valor no WhatsApp [CONFIRMAR C-20].">
+<link rel="canonical" href="https://[PREENCHER-DOMINIO]/">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Agnaldo Higienização">
+<meta property="og:title" content="Agnaldo Higienização | Limpeza de sofá, tapetes e cortinas">
+<meta property="og:description" content="Agnaldo Higienização: limpeza e higienização de sofá, tapetes e cortinas em Cuiabá e Várzea Grande, com sede em Várzea Grande - MT.">
+<meta property="og:url" content="https://[PREENCHER-DOMINIO]/">
+<meta property="og:image" content="https://[PREENCHER-DOMINIO]/assets/img/og/padrao.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Agnaldo Higienização">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A3B49">
+<link rel="preload" href="/agnaldo-previa/assets/fonts/manrope-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<script src="/agnaldo-previa/assets/js/consent.js"></script>
+<link rel="stylesheet" href="/agnaldo-previa/assets/css/style.css">
+<link rel="icon" href="/agnaldo-previa/favicon.ico" sizes="any">
+<link rel="icon" href="/agnaldo-previa/assets/marca/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/agnaldo-previa/assets/marca/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/agnaldo-previa/assets/marca/apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="/agnaldo-previa/site.webmanifest">
+<link rel="entitymap" type="application/json" href="/agnaldo-previa/entitymap.json">
+<!-- VARIA: JSON-LD da página (um único bloco com @graph; FAQPage idêntico ao FAQ visível). A organização e o catálogo são descritos só na entity home (/sobre/); aqui, só a referência por @id. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://[PREENCHER-DOMINIO]/#website",
+      "url": "https://[PREENCHER-DOMINIO]/",
+      "name": "Agnaldo Higienização",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://[PREENCHER-DOMINIO]/sobre/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://[PREENCHER-DOMINIO]/#webpage",
+      "url": "https://[PREENCHER-DOMINIO]/",
+      "name": "Agnaldo Higienização | Limpeza de sofá, tapetes e cortinas",
+      "description": "Agnaldo Higienização: limpeza de sofá, tapetes e cortinas em Cuiabá e Várzea Grande, com sede em Várzea Grande. Mande fotos e receba o valor no WhatsApp [CONFIRMAR C-20].",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://[PREENCHER-DOMINIO]/#website"
+      },
+      "about": {
+        "@id": "https://[PREENCHER-DOMINIO]/sobre/#organization"
+      },
+      "keywords": "Agnaldo Higienização",
+      "mentions": [
+        {
+          "@type": "City",
+          "name": "Cuiabá",
+          "sameAs": "https://www.wikidata.org/wiki/Q170762"
+        },
+        {
+          "@type": "City",
+          "name": "Várzea Grande",
+          "sameAs": "https://www.wikidata.org/wiki/Q983884"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://[PREENCHER-DOMINIO]/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que a Agnaldo Higienização limpa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Agnaldo Higienização faz a limpeza de sofá, tapetes e cortinas em Cuiabá e Várzea Grande e atende também colchões, poltronas, cadeiras estofadas, persianas e carpetes [CONFIRMAR C-03]. Para comparar a indicação de cada serviço, veja a página com todos os serviços de higienização."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como peço o orçamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Escreva no WhatsApp [PREENCHER: número] ou use o formulário desta página. Três informações bastam para começar: a peça, o bairro e o problema. Junte uma foto da peça inteira e outra bem de perto da mancha; para tapete, cortina, persiana e carpete, acrescente largura e comprimento. O valor vem pela própria conversa, sem visita [CONFIRMAR C-20]."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto custa limpar sofá, tapete ou colchão?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não existe preço único, porque cada peça pesa de um jeito no trabalho. No sofá contam o número de lugares e o tecido; no tapete, os metros quadrados e a fibra; no colchão, o tamanho e se as duas faces serão limpas. Tabela de referência: [PREENCHER C-19]. Com fotos e medidas, você recebe o valor fechado antes de agendar [CONFIRMAR C-20]."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Em quanto tempo o sofá fica seco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O tempo varia com o tecido, a espessura da espuma, a ventilação do cômodo e a umidade do dia em Cuiabá e Várzea Grande. Na seca, entre junho e setembro, a secagem tende a ser mais rápida; nas chuvas, mais lenta. O prazo de cada peça, [PREENCHER C-18], vem no orçamento, com a orientação de uso até secar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Toda mancha sai com a limpeza?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. Café derramado há pouco costuma sair; caneta antiga, queimadura e área desbotada pelo sol normalmente não, porque a cor ou a própria fibra já mudou. Entre esses extremos, o resultado depende da idade da mancha e do que já foi aplicado nela. Fotos de perto permitem dizer o que esperar antes de você fechar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais bairros de Cuiabá e Várzea Grande são atendidos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A área de atendimento são as cidades de Cuiabá e Várzea Grande. Têm página própria os bairros Jardim das Américas, Duque de Caxias, Goiabeiras, Santa Rosa, Bosque da Saúde e Jardim Itália, em Cuiabá, e Cristo Rei, Jardim Glória, Parque do Lago e Costa Verde, em Várzea Grande [CONFIRMAR C-06/C-07]. Mora em outro bairro? Informe o endereço no pedido."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês buscam o tapete e a cortina em casa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Retirada e entrega de tapetes e cortinas, desmontagem e reinstalação de cortinas e persianas: [PREENCHER C-05]. Ao pedir o orçamento, informe o bairro, o tamanho da peça e o andar do imóvel. Esses dados ajudam a combinar o dia e a forma de atendimento sem surpresa no valor final."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O produto é seguro perto de crianças e pets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Produtos usados, cheiro depois do serviço e cuidados com crianças, idosos e animais em casa: [PREENCHER C-32]. Ao pedir o orçamento, avise se há bebê, pessoa com alergia ou pet que usa o sofá, porque essa informação orienta a escolha do produto e o uso da peça até o fim da secagem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como cuidar da mancha enquanto espera a limpeza?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tire o excesso com papel toalha, tocando sem pressionar, e pare por aí. Escova, mistura de produtos e secador costumam piorar: a escova abre a trama, a mistura pode manchar e o calor fixa a sujeira. Fotografe a área com luz do dia e anote quando aconteceu e o que já foi usado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A Agnaldo Higienização atende empresas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O atendimento a escritórios, clínicas, escolas e condomínios, com proposta por lote, está em confirmação [CONFIRMAR C-26]. Se a sua empresa precisa limpar cadeiras, sofás de recepção, carpete ou cortinas, veja a página de higienização para empresas e informe a quantidade de peças por modelo e o melhor horário."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<!-- FIXO: dados do cliente para o main.js e a medição (vazios até C-09 e Fase 7; GA4 e Clarity só carregam depois do aceite em cookies.js) -->
+<body data-whatsapp="" data-whatsapp-visivel="" data-empresa="" data-ga4="" data-clarity="" data-pixel="">
+<!-- FIXO: link de pulo, barra NAP, header e mega menus (docs/06-mega-menu.md, seções 1 e 2) -->
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+<div class="topbar">
+  <div class="container topbar__in">
+    <a class="topbar__entidade" href="/agnaldo-previa/sobre/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="badge-check" class="icon"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m16 9-5.5 5.5L8 12"/></svg><span><strong>Agnaldo Higienização</strong>, sofá, tapetes e cortinas</span></a>
+    <ul class="topbar__nap">
+      <li class="topbar__horario"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="clock" class="icon"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>[PREENCHER: horário de atendimento]</span></li>
+      <li><a href="/agnaldo-previa/contato/#como-chegar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span class="topbar__end-longo">[PREENCHER: endereço], Várzea Grande&nbsp;-&nbsp;MT</span><span class="topbar__end-curto">Várzea Grande&nbsp;-&nbsp;MT</span></a></li>
+      <li><a href="/agnaldo-previa/contato/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="phone" class="icon"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg><span class="nowrap">[PREENCHER: telefone]</span></a></li>
+    </ul>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container site-header__in">
+    <a class="brand" href="/agnaldo-previa/" aria-label="Agnaldo Higienização, página inicial">
+      <img src="/agnaldo-previa/assets/marca/logo.svg" width="266" height="48" alt="Agnaldo Higienização">
+    </a>
+    <nav class="main-nav" id="menu-principal" aria-label="Menu principal">
+      <ul class="nav-list">
+        <li class="has-mega">
+          <button class="mega-trigger" type="button" data-mega-trigger aria-expanded="false" aria-controls="mega-servicos">Serviços<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="chevron-down" class="icon"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="mega" id="mega-servicos">
+            <div class="mega__in">
+              <div class="mega__grid mega__grid--servicos">
+                <div class="mega__publico mega__publico--voce">
+                  <p class="mega__rotulo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="house" class="icon"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Para você</p>
+                  <div class="mega__colunas">
+                    <div class="mega__col">
+                      <a class="mega__titulo" href="/agnaldo-previa/higienizacao-de-estofados-cuiaba-mt/">Higienização de estofados<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                      <ul class="mega__list">
+                        <li class="mega__par"><a class="mega__item" href="/agnaldo-previa/limpeza-de-sofa-cuiaba-mt/" title="Manchas, odores e pelos no sofá"><span class="mega__ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="sofa" class="icon"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"/><path d="M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"/><path d="M4 18v2"/><path d="M20 18v2"/><path d="M12 4v9"/></svg></span><span class="mega__txt"><strong>Limpeza de sofá</strong></span></a><a class="mega__vg" href="/agnaldo-previa/limpeza-de-sofa-varzea-grande-mt/" aria-label="Limpeza de sofá em Várzea Grande"><span class="mega__vg-longo">Em Várzea Grande</span><span class="mega__vg-curto" aria-hidden="true">Várzea Grande</span></a></li>
+                        <li class="mega__par"><a class="mega__item" href="/agnaldo-previa/limpeza-de-colchao-cuiaba-mt/" title="Manchas, odores e poeira acumulada"><span class="mega__ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="bed-double" class="icon"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></svg></span><span class="mega__txt"><strong>Limpeza de colchão</strong></span></a><a class="mega__vg" href="/agnaldo-previa/limpeza-de-colchao-varzea-grande-mt/" aria-label="Limpeza de colchão em Várzea Grande"><span class="mega__vg-longo">Em Várzea Grande</span><span class="mega__vg-curto" aria-hidden="true">Várzea Grande</span></a></li>
+                        <li class="mega__par"><a class="mega__item" href="/agnaldo-previa/limpeza-de-poltrona-cuiaba-mt/" title="Poltronas fixas e reclináveis"><span class="mega__ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="armchair" class="icon"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"/><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"/><path d="M5 18v2"/><path d="M19 18v2"/></svg></span><span class="mega__txt"><strong>Limpeza de poltrona</strong></span></a><a class="mega__vg" href="/agnaldo-previa/limpeza-de-poltrona-varzea-grande-mt/" aria-label="Limpeza de poltrona em Várzea Grande"><span class="mega__vg-longo">Em Várzea Grande</span><span class="mega__vg-curto" aria-hidden="true">Várzea Grande</span></a></li>
+                        <li class="mega__par"><a class="mega__item" href="/agnaldo-previa/limpeza-de-cadeiras-cuiaba-mt/" title="Cadeiras de jantar e conjuntos"><span class="mega__ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="rows-3" class="icon"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M21 9H3"/><path d="M21 15H3"/></svg></span><span class="mega__txt"><strong>Limpeza de cadeiras</strong></span></a><a class="mega__vg" href="/agnaldo-previa/limpeza-de-cadeiras-varzea-grande-mt/" aria-label="Limpeza de cadeiras em Várzea Grande"><span class="mega__vg-longo">Em Várzea Grande</span><span class="mega__vg-curto" aria-hidden="true">Várzea Grande</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="mega__col">
+                      <a class="mega__titulo" href="/agnaldo-previa/servicos/#para-voce">Tapetes, cortinas, persianas e carpete<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                      <ul class="mega__list">
+                        <li class="mega__par"><a class="mega__item" href="/agnaldo-previa/limpeza-de-tapetes-cuiaba-mt/" title="Avaliação de fibra e medida"><span class="mega__ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="rectangle-horizontal" class="icon"><rect width="20" height="12" x="2" y="6" rx="2"/></svg></span><span class="mega__txt"><strong>Limpeza de tapetes</strong></span></a><a class="mega__vg" href="/agnaldo-previa/limpeza-de-tapetes-varzea-grande-mt/" aria-label="Limpeza de tapetes em Várzea Grande"><span class="mega__vg-longo">Em Várzea Grande</span><span class="mega__vg-curto" aria-hidden="true">Várzea Grande</span></a></li>
+                        <li class="mega__par"><a class="mega__item" href="/agnaldo-previa/limpeza-de-cortinas-cuiaba-mt/" title="Tecidos, forros e blackout"><span class="mega__ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="theater" class="icon"><path d="M2 10s3-3 3-8"/><path d="M22 10s-3-3-3-8"/><path d="M10 2c0 4.4-3.6 8-8 8"/><path d="M14 2c0 4.4 3.6 8 8 8"/><path d="M2 10s2 2 2 5"/><path d="M22 10s-2 2-2 5"/><path d="M8 15h8"/><path d="M2 22v-1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1"/><path d="M14 22v-1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1"/></svg></span><span class="mega__txt"><strong>Limpeza de cortinas</strong></span></a><a class="mega__vg" href="/agnaldo-previa/limpeza-de-cortinas-varzea-grande-mt/" aria-label="Limpeza de cortinas em Várzea Grande"><span class="mega__vg-longo">Em Várzea Grande</span><span class="mega__vg-curto" aria-hidden="true">Várzea Grande</span></a></li>
+                        <li class="mega__par"><a class="mega__item" href="/agnaldo-previa/limpeza-de-persianas-cuiaba-mt/" title="Rolô, verticais, horizontais e romanas"><span class="mega__ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="blinds" class="icon"><path d="M3 3h18"/><path d="M20 7H8"/><path d="M20 11H8"/><path d="M10 19h10"/><path d="M8 15h12"/><path d="M4 3v14"/><circle cx="4" cy="19" r="2"/></svg></span><span class="mega__txt"><strong>Limpeza de persianas</strong></span></a><a class="mega__vg" href="/agnaldo-previa/limpeza-de-persianas-varzea-grande-mt/" aria-label="Limpeza de persianas em Várzea Grande"><span class="mega__vg-longo">Em Várzea Grande</span><span class="mega__vg-curto" aria-hidden="true">Várzea Grande</span></a></li>
+                        <li class="mega__par"><a class="mega__item" href="/agnaldo-previa/limpeza-de-carpete-cuiaba-mt/" title="Carpete instalado, orçamento por m²"><span class="mega__ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="grid-3x3" class="icon"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 3v18"/><path d="M15 3v18"/></svg></span><span class="mega__txt"><strong>Limpeza de carpete</strong></span></a><a class="mega__vg" href="/agnaldo-previa/limpeza-de-carpete-varzea-grande-mt/" aria-label="Limpeza de carpete em Várzea Grande"><span class="mega__vg-longo">Em Várzea Grande</span><span class="mega__vg-curto" aria-hidden="true">Várzea Grande</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- VARIA: coluna Para empresa só se C-26 = sim; se não, trocar pelo bloco lateral de destaque (docs/06-mega-menu.md 2.4) -->
+                <div class="mega__publico mega__publico--empresa">
+                  <p class="mega__rotulo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="building" class="icon"><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M12 6h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M16 6h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/><path d="M8 6h.01"/><path d="M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/><rect x="4" y="2" width="16" height="20" rx="2"/></svg>Para empresa</p>
+                  <div class="mega__colunas">
+                    <div class="mega__col">
+                      <a class="mega__titulo" href="/agnaldo-previa/higienizacao-para-empresas-cuiaba-mt/">Higienização para empresas<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                      <ul class="mega__list">
+                        <li><a class="mega__item" href="/agnaldo-previa/higienizacao-para-empresas-cuiaba-mt/#estofados"><span class="mega__ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="door-open" class="icon"><path d="M10 21H2"/><path d="M10 3H7a2 2 0 00-2 2v16"/><path d="M14 12h.01"/><path d="M19 21V5a2 2 0 00-1.675-1.974l-6.163-1.013A1 1 0 0010 3v18a1 1 0 001.124.992z"/><path d="M22 21h-3"/></svg></span><span class="mega__txt"><strong>Sofás e poltronas de recepção</strong><span>Recepções, salas de espera, clínicas</span></span></a></li>
+                        <li><a class="mega__item" href="/agnaldo-previa/higienizacao-para-empresas-cuiaba-mt/#cadeiras"><span class="mega__ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="monitor" class="icon"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg></span><span class="mega__txt"><strong>Cadeiras de escritório em lote</strong><span>Escritórios, escolas e auditórios</span></span></a></li>
+                        <li><a class="mega__item" href="/agnaldo-previa/higienizacao-para-empresas-cuiaba-mt/#carpete"><span class="mega__ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="grid-2x2" class="icon"><path d="M12 3v18"/><path d="M3 12h18"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg></span><span class="mega__txt"><strong>Carpete comercial</strong><span>Salas e corredores fora do expediente</span></span></a></li>
+                        <li><a class="mega__item" href="/agnaldo-previa/higienizacao-para-empresas-cuiaba-mt/#cortinas"><span class="mega__ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="panel-top" class="icon"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/></svg></span><span class="mega__txt"><strong>Cortinas e persianas comerciais</strong><span>Salas, recepções e consultórios</span></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mega__faixa">
+                <a class="btn btn--primary mega__cta" href="https://wa.me/[PREENCHER-WHATSAPP]?text=Ol%C3%A1!%20Quero%20pedir%20um%20or%C3%A7amento%20em%20Cuiab%C3%A1%20ou%20V%C3%A1rzea%20Grande.%20Posso%20enviar%20fotos%20da%20pe%C3%A7a%3F" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" data-marca="whatsapp" class="icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Pedir orçamento pelo WhatsApp</a>
+                <span class="mega__faixa-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="phone" class="icon"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg><span class="nowrap">[PREENCHER: telefone]</span></span>
+                <span class="mega__faixa-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Atendimento em Cuiabá e Várzea Grande</span>
+                <a class="mega__faixa-link mega__todos" href="/agnaldo-previa/servicos/">Ver todos os serviços<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="has-mega">
+          <button class="mega-trigger" type="button" data-mega-trigger data-nav="/agnaldo-previa/areas-atendidas/" aria-expanded="false" aria-controls="mega-areas">Áreas atendidas<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="chevron-down" class="icon"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="mega mega--bairros" id="mega-areas">
+            <div class="mega__in">
+              <div class="mega__grid mega__grid--bairros">
+                <div class="mega__intro">
+                  <p class="mega__rotulo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map" class="icon"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg>Áreas atendidas</p>
+                  <a class="mega__titulo" href="/agnaldo-previa/areas-atendidas/">Cuiabá, Várzea Grande e bairros<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                  <p>A sede fica em Várzea Grande e o atendimento cobre as duas cidades. Cada bairro ao lado tem página própria com os serviços da região.</p>
+                  <a class="mega__faixa-link" href="/agnaldo-previa/contato/#como-chegar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="navigation" class="icon"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>Sede em Várzea Grande: [PREENCHER: endereço]</a>
+                </div>
+                <div class="mega__bairros">
+                  <p class="mega__rotulo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pinned" class="icon"><path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 01-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0112 0"/><path d="M4.474 15h-.197a1 1 0 00-.969.753l-1.097 4.35a1.5 1.5 0 001.444 1.898L20.344 22a1.5 1.5 0 001.446-1.897l-1.098-4.35a1 1 0 00-.969-.753h-.197"/><circle cx="12" cy="8" r="2"/></svg>Bairros com página</p>
+                  <div class="mega__cidades">
+                    <div class="mega__cidade">
+                      <a class="mega__titulo" href="/agnaldo-previa/cuiaba-mt/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="landmark" class="icon"><path d="M10 18v-7"/><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/></svg>Cuiabá</a>
+                      <ul>
+                        <li><a class="mega__bairro" href="/agnaldo-previa/cuiaba-mt/jardim-das-americas/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Jardim das Américas</a></li>
+                        <li><a class="mega__bairro" href="/agnaldo-previa/cuiaba-mt/duque-de-caxias/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Duque de Caxias</a></li>
+                        <li><a class="mega__bairro" href="/agnaldo-previa/cuiaba-mt/goiabeiras/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Goiabeiras</a></li>
+                        <li><a class="mega__bairro" href="/agnaldo-previa/cuiaba-mt/santa-rosa/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Santa Rosa</a></li>
+                        <li><a class="mega__bairro" href="/agnaldo-previa/cuiaba-mt/bosque-da-saude/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Bosque da Saúde</a></li>
+                        <li><a class="mega__bairro" href="/agnaldo-previa/cuiaba-mt/jardim-italia/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Jardim Itália</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega__cidade">
+                      <a class="mega__titulo" href="/agnaldo-previa/varzea-grande-mt/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin-house" class="icon"><path d="M15 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 .445-.832l3-2a1 1 0 0 1 1.11 0l3 2A1 1 0 0 1 22 17v4a1 1 0 0 1-1 1z"/><path d="M18 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 .601.2"/><path d="M18 22v-3"/><circle cx="10" cy="10" r="3"/></svg>Várzea Grande</a>
+                      <ul>
+                        <li><a class="mega__bairro" href="/agnaldo-previa/varzea-grande-mt/cristo-rei/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Cristo Rei</a></li>
+                        <li><a class="mega__bairro" href="/agnaldo-previa/varzea-grande-mt/jardim-gloria/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Jardim Glória</a></li>
+                        <li><a class="mega__bairro" href="/agnaldo-previa/varzea-grande-mt/parque-do-lago/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Parque do Lago</a></li>
+                        <li><a class="mega__bairro" href="/agnaldo-previa/varzea-grande-mt/costa-verde/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Costa Verde</a></li>
+                        <li><a class="mega__bairro" href="/agnaldo-previa/contato/#como-chegar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="navigation" class="icon"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>Sede em Várzea Grande</a></li>
+                        <li><a class="mega__bairro" href="/agnaldo-previa/areas-atendidas/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="layers-2" class="icon"><path d="M13 13.74a2 2 0 0 1-2 0L2.5 8.87a1 1 0 0 1 0-1.74L11 2.26a2 2 0 0 1 2 0l8.5 4.87a1 1 0 0 1 0 1.74z"/><path d="m20 14.285 1.5.845a1 1 0 0 1 0 1.74L13 21.74a2 2 0 0 1-2 0l-8.5-4.87a1 1 0 0 1 0-1.74l1.5-.845"/></svg>Ver todas as áreas atendidas</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a class="nav-link" href="/agnaldo-previa/blog/">Blog</a></li>
+        <li><a class="nav-link" href="/agnaldo-previa/sobre/">Sobre</a></li>
+        <li><a class="nav-link" href="/agnaldo-previa/contato/"><span>Contato<span class="nav-link__long"> e orçamento</span></span></a></li>
+      </ul>
+      <div class="nav-drawer-extra">
+        <a class="btn btn--primary btn--block" href="https://wa.me/[PREENCHER-WHATSAPP]?text=Ol%C3%A1!%20Quero%20pedir%20um%20or%C3%A7amento%20em%20Cuiab%C3%A1%20ou%20V%C3%A1rzea%20Grande.%20Posso%20enviar%20fotos%20da%20pe%C3%A7a%3F" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" data-marca="whatsapp" class="icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Pedir orçamento pelo WhatsApp</a>
+        <a class="btn btn--outline btn--block" href="/agnaldo-previa/contato/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="phone" class="icon"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>Ver telefone e endereço da sede</a>
+        <p class="nav-drawer-extra__info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="clock" class="icon"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>[PREENCHER: horário de atendimento]</p>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--primary header-cta" href="https://wa.me/[PREENCHER-WHATSAPP]?text=Ol%C3%A1!%20Quero%20pedir%20um%20or%C3%A7amento%20em%20Cuiab%C3%A1%20ou%20V%C3%A1rzea%20Grande.%20Posso%20enviar%20fotos%20da%20pe%C3%A7a%3F" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" data-marca="whatsapp" class="icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>Pedir orçamento<span class="header-cta__long"> pelo WhatsApp</span></span></a>
+      <button class="nav-button" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir o menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="menu" class="icon icon-open"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="x" class="icon icon-close"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo" data-sop-tipo="home">
+
+  <!-- VARIA: hero (H1 com a palavra-chave exata, lead com a resposta direta, 2 CTAs, 3 provas factuais e foto) -->
+  <section class="hero" data-sop="hero" aria-labelledby="titulo-hero">
+    <div class="container hero__in">
+      <div class="hero__copy">
+        <h1 id="titulo-hero">Agnaldo Higienização</h1>
+        <p class="hero__sub">Limpeza e higienização de sofá, tapetes e cortinas em Cuiabá e Várzea Grande</p>
+        <p class="hero__lead">A <strong>Agnaldo Higienização</strong> é uma empresa de limpeza e higienização com sede em Várzea Grande que cuida das peças grandes da casa em Cuiabá e Várzea Grande: sofás, tapetes e cortinas, além de colchões e persianas <span class="marcador">[CONFIRMAR C-03]</span>. Mande fotos da peça pelo WhatsApp e receba o valor sem sair de casa <span class="marcador">[CONFIRMAR C-20]</span>.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://wa.me/[PREENCHER-WHATSAPP]?text=Ol%C3%A1!%20Quero%20pedir%20um%20or%C3%A7amento%20em%20Cuiab%C3%A1%20ou%20V%C3%A1rzea%20Grande.%20Posso%20enviar%20fotos%20da%20pe%C3%A7a%3F" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" data-marca="whatsapp" class="icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Mandar fotos da peça pelo WhatsApp</a>
+          <a class="btn btn--inverse" href="/agnaldo-previa/servicos/">Ver os serviços<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </div>
+        <ul class="hero__provas">
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="sofa" class="icon"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"/><path d="M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"/><path d="M4 18v2"/><path d="M20 18v2"/><path d="M12 4v9"/></svg>Sofá, tapetes e cortinas</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map" class="icon"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg>Atende Cuiabá e Várzea Grande</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="message-circle" class="icon"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></svg>Orçamento pelo WhatsApp</li>
+        </ul>
+      </div>
+      <!-- VARIA: foto do hero. Placeholder até a foto real do cliente (docs/imagens-plano.json, slot home-hero) -->
+      <figure class="media hero__media ph" role="img" aria-label="Sofá de tecido claro sendo higienizado na sala de um apartamento" data-ph="Foto real: técnico higienizando sofá de tecido claro na sala de um apartamento em Cuiabá, luz natural de janela">
+        <img src="/agnaldo-previa/assets/img/home-hero-higienizacao-cuiaba.webp" width="1400" height="1200" alt="Sofá de tecido claro sendo higienizado na sala de um apartamento" fetchpriority="high" decoding="async">
+      </figure>
+    </div>
+  </section>
+
+  <!-- VARIA: faixa de fatos (confiança). Só fatos de projeto.yaml; sem número inventado -->
+  <section class="faixa-fatos" data-sop="confianca" aria-label="Fatos sobre o atendimento">
+    <div class="container">
+      <ul>
+        <li><span class="fato-badge"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin-house" class="icon"><path d="M15 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 .445-.832l3-2a1 1 0 0 1 1.11 0l3 2A1 1 0 0 1 22 17v4a1 1 0 0 1-1 1z"/><path d="M18 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 .601.2"/><path d="M18 22v-3"/><circle cx="10" cy="10" r="3"/></svg></span><span>Sede em <strong>Várzea Grande&nbsp;-&nbsp;MT</strong></span></li>
+        <li><span class="fato-badge"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="landmark" class="icon"><path d="M10 18v-7"/><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/></svg></span><span>Também <strong>colchão, poltrona e persiana</strong> <span class="marcador">[CONFIRMAR C-03]</span></span></li>
+        <li><span class="fato-badge"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="camera" class="icon"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"/><circle cx="12" cy="13" r="3"/></svg></span><span>Avaliação <strong>por fotos</strong> <span class="marcador">[CONFIRMAR C-20]</span></span></li>
+        <li><span class="fato-badge"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="message-circle" class="icon"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></svg></span><span>Casas e <strong>espaços empresariais</strong> <span class="marcador">[CONFIRMAR C-26]</span></span></li>
+      </ul>
+    </div>
+  </section>
+  <!-- SECAO-PENDENTE: numeros (faixa aqua com números reais: clientes C-14, avaliações no Google C-15, fundação C-13) -->
+
+  <!-- VARIA: problema e solução (split imagem à esquerda + checklist em 2 colunas) -->
+  <section class="section" data-sop="problema-solucao" aria-labelledby="titulo-problema">
+    <div class="container split">
+      <figure class="media media--4x5 split__media split__media--alta ph" role="img" aria-label="Mancha no assento de um sofá de tecido bege, vista de perto" data-ph="Foto real: mancha de café no assento de sofá de tecido bege, vista de perto, luz lateral">
+        <img src="/agnaldo-previa/assets/img/home-mancha-sofa.webp" width="960" height="1200" alt="Mancha no assento de um sofá de tecido bege, vista de perto" loading="lazy" decoding="async">
+      </figure>
+      <div class="split__copy">
+        <h2 id="titulo-problema" class="h2-split">Mancha, odor e poeira no sofá, no tapete e na cortina</h2>
+        <p class="lead">Os seis problemas abaixo deixam rastros diferentes no tecido do sofá, do tapete e da cortina, e entender qual é o seu ajuda a pedir o serviço certo e a saber, antes de pagar, até onde a limpeza e a higienização conseguem chegar.</p>
+        <ul class="check-grid">
+          <li><span class="check-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="droplets" class="icon"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg></span><span><strong>Café, vinho ou molho</strong><span>Quanto mais antiga e mais esfregada, mais a mancha se prende à trama.</span></span></li>
+          <li><span class="check-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="paw-print" class="icon"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/></svg></span><span><strong>Xixi de cachorro ou gato</strong><span>O cheiro volta quando o líquido passou do tecido e chegou à espuma.</span></span></li>
+          <li><span class="check-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="dog" class="icon"><path d="M11.25 16.25h1.5L12 17z"/><path d="M16 14v.5"/><path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444a11.702 11.702 0 0 0-.493-3.309"/><path d="M8 14v.5"/><path d="M8.5 8.5c-.384 1.05-1.083 2.028-2.344 2.5-1.931.722-3.576-.297-3.656-1-.113-.994 1.177-6.53 4-7 1.923-.321 3.651.845 3.651 2.235A7.497 7.497 0 0 1 14 5.277c0-1.39 1.844-2.598 3.767-2.277 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5"/></svg></span><span><strong>Pelo de pet na trama</strong><span>Veludo e chenile prendem pelo que o aspirador comum não tira.</span></span></li>
+          <li><span class="check-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="hand" class="icon"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></span><span><strong>Braço e assento escuros</strong><span>Suor e oleosidade da pele marcam onde o corpo encosta todo dia.</span></span></li>
+          <li><span class="check-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="wind" class="icon"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"/><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/><path d="M9.8 4.4A2 2 0 1 1 11 8H2"/></svg></span><span><strong>Fumaça e poeira da seca</strong><span>De junho a setembro, a fuligem das queimadas assenta no tecido.</span></span></li>
+          <li><span class="check-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="bed-double" class="icon"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></svg></span><span><strong>Pó acumulado no colchão</strong><span>Anos de uso deixam pó fino que incomoda quem tem rinite.</span></span></li>
+        </ul>
+        <p class="section-close">Não precisa saber o nome técnico do problema para pedir ajuda. Conte o que aconteceu, há quanto tempo e quais produtos já passaram na peça: esse histórico muda a escolha do método tanto quanto o tipo de tecido.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VARIA: serviços prioritários (3 serviceCards em banda petróleo; grade de cards 1 de 2) -->
+  <section class="section on-dark" data-sop="servicos" id="servicos" aria-labelledby="titulo-servicos">
+    <div class="container">
+      <header class="sec-head">
+        <h2 id="titulo-servicos" class="h2">Serviços da Agnaldo Higienização em Cuiabá e Várzea Grande</h2>
+        <p class="lead">A limpeza de sofá, tapetes e cortinas é o centro do trabalho da <strong>Agnaldo Higienização</strong>, que também cuida das outras peças que não cabem na máquina de casa, como colchão, poltrona, cadeiras, persiana e carpete, em Cuiabá e Várzea Grande <span class="marcador">[CONFIRMAR C-03]</span>. Sofá, tapetes e cortinas estão nos cards abaixo; poltronas e cadeiras ficam na <a href="/agnaldo-previa/higienizacao-de-estofados-cuiaba-mt/">higienização de estofados em Cuiabá</a>.</p>
+      </header>
+      <div class="card-grid">
+        <article class="service-card">
+          <figure class="media media--4x3 ph" role="img" aria-label="Sofá de tecido cinza de três lugares em uma sala" data-ph="Foto real: sofá de tecido cinza de três lugares durante a limpeza, sala de casa em Cuiabá">
+            <img src="/agnaldo-previa/assets/img/home-servico-limpeza-sofa.webp" width="800" height="600" alt="Sofá de tecido cinza de três lugares em uma sala" loading="lazy" decoding="async">
+          </figure>
+          <div class="service-body">
+            <h3>Limpeza de sofá</h3>
+            <p>Sofá de tecido, de canto, sofá-cama ou retrátil <span class="marcador">[CONFIRMAR C-33]</span>. O valor considera lugares, tecido e manchas.</p>
+            <a class="service-more" href="/agnaldo-previa/limpeza-de-sofa-cuiaba-mt/">Ver limpeza de sofá<span class="icon-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+          </div>
+        </article>
+        <article class="service-card">
+          <figure class="media media--4x3 ph" role="img" aria-label="Tapete estendido sendo medido com trena" data-ph="Foto real: tapete estendido no chão sendo medido com trena antes da limpeza">
+            <img src="/agnaldo-previa/assets/img/home-servico-limpeza-tapetes.webp" width="800" height="600" alt="Tapete estendido sendo medido com trena" loading="lazy" decoding="async">
+          </figure>
+          <div class="service-body">
+            <h3>Limpeza de tapetes</h3>
+            <p>Fibra, base, franja e medida pesam no método e no valor de cada tapete, do sintético à lã.</p>
+            <a class="service-more" href="/agnaldo-previa/limpeza-de-tapetes-cuiaba-mt/">Ver limpeza de tapetes<span class="icon-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+          </div>
+        </article>
+        <article class="service-card">
+          <figure class="media media--4x3 ph" role="img" aria-label="Cortina de tecido claro com forro em uma janela de sala" data-ph="Foto real: cortina de tecido claro com forro em janela de sala, pronta para a limpeza">
+            <img src="/agnaldo-previa/assets/img/home-servico-limpeza-cortinas.webp" width="800" height="600" alt="Cortina de tecido claro com forro em uma janela de sala" loading="lazy" decoding="async">
+          </figure>
+          <div class="service-body">
+            <h3>Limpeza de cortinas</h3>
+            <p>Tecido, forro ou blackout, com largura e altura no pedido para avaliar o método de cada cortina.</p>
+            <a class="service-more" href="/agnaldo-previa/limpeza-de-cortinas-cuiaba-mt/">Ver limpeza de cortinas<span class="icon-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+          </div>
+        </article>
+      </div>
+      <p class="section-close">Colchão de solteiro a king, com mancha amarelada, odor ou poeira acumulada, também entra na lista: veja a <a href="/agnaldo-previa/limpeza-de-colchao-cuiaba-mt/">limpeza de colchão em Cuiabá</a>. Para recepções, escritórios e clínicas, a <a href="/agnaldo-previa/higienizacao-para-empresas-cuiaba-mt/">higienização para empresas</a> é organizada por lote <span class="marcador">[CONFIRMAR C-26]</span>.</p>
+      <div class="center-action">
+        <a class="btn btn--inverse" href="/agnaldo-previa/servicos/">Comparar todos os serviços<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VARIA: como funciona (4 passos já afirmados na página; processo real em confirmação C-32) -->
+  <section class="section section--soft" data-sop="como-funciona" aria-labelledby="titulo-processo">
+    <div class="container">
+      <header class="sec-head">
+        <h2 id="titulo-processo" class="h2">Como funciona o pedido, da foto à secagem</h2>
+        <p class="lead">Quatro passos levam o pedido do primeiro contato à peça seca na <strong>Agnaldo Higienização</strong>, para quem mora em Cuiabá ou Várzea Grande. Você começa pelo celular, recebe o valor antes de qualquer serviço e sai sabendo quanto tempo esperar até usar a peça de novo.</p>
+      </header>
+      <p class="processo-status"><span class="badge">Passo a passo em confirmação <span class="marcador">[CONFIRMAR C-32]</span></span></p>
+      <ol class="process">
+        <li class="step--white">
+          <div class="step-top"><span class="step-n">01</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="camera" class="icon"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"/><circle cx="12" cy="13" r="3"/></svg></div>
+          <h3>Fotos da peça no WhatsApp</h3>
+          <p>O pedido começa com fotos: uma da peça inteira e outra da mancha de perto <span class="marcador">[CONFIRMAR C-20]</span>. Para tapete, cortina e carpete, junte as medidas.</p>
+        </li>
+        <li class="step--accent">
+          <div class="step-top"><span class="step-n">02</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="receipt-text" class="icon"><path d="M13 16H8"/><path d="M14 8H8"/><path d="M16 12H8"/><path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"/></svg></div>
+          <h3>Orçamento fechado antes</h3>
+          <p>O valor chega antes do serviço <span class="marcador">[CONFIRMAR C-20]</span>, junto com o resultado esperado e os limites da limpeza. Nada começa sem a sua aprovação.</p>
+        </li>
+        <li class="step--dark">
+          <div class="step-top"><span class="step-n">03</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="truck" class="icon"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></div>
+          <h3>Retirada ou atendimento no local</h3>
+          <p>A forma de atendimento é combinada no orçamento, peça por peça: no seu endereço ou com retirada <span class="marcador">[PREENCHER C-05]</span>.</p>
+        </li>
+        <li class="step--soft2">
+          <div class="step-top"><span class="step-n">04</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="wind" class="icon"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"/><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/><path d="M9.8 4.4A2 2 0 1 1 11 8H2"/></svg></div>
+          <h3>Secagem com prazo informado</h3>
+          <p>Cada peça sai com o prazo de secagem e a orientação de uso até lá. O prazo de cada tipo de peça é <span class="marcador">[PREENCHER C-18]</span>.</p>
+        </li>
+      </ol>
+      <div class="process-foot">
+        <p class="section-close">Os quatro passos valem para casas em Cuiabá e Várzea Grande. Se a dúvida é sobre a sua peça, a tabela logo abaixo mostra o que costuma preocupar em cada uma.</p>
+        <a class="btn btn--dark" href="https://wa.me/[PREENCHER-WHATSAPP]?text=Ol%C3%A1!%20Quero%20pedir%20um%20or%C3%A7amento%20em%20Cuiab%C3%A1%20ou%20V%C3%A1rzea%20Grande.%20Posso%20enviar%20fotos%20da%20pe%C3%A7a%3F" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" data-marca="whatsapp" class="icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Começar o pedido pelo WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECAO-PENDENTE: diferenciais (6 featureCards 3x2 com provas reais: C-16 diferenciais, C-17 garantias, C-18 prazos, C-13 fundação) -->
+
+  <!-- VARIA: information gain (tabela de avaliação por peça + secagem pelo clima de Cuiabá) -->
+  <section class="section" data-sop="information-gain" aria-labelledby="titulo-guia">
+    <div class="container">
+      <header class="sec-head">
+        <h2 id="titulo-guia" class="h2">Dúvidas e riscos de cada peça antes da limpeza</h2>
+        <p class="lead">Antes da <strong>limpeza e higienização</strong> em Cuiabá e Várzea Grande, a pergunta que pesa é uma só: a peça aguenta a limpeza? A tabela junta a dúvida principal sobre cada peça, o que costuma dar errado quando ela é lavada em casa e o que pesa no prazo de secagem ou de devolução.</p>
+      </header>
+      <div class="table-wrap">
+        <table class="compare">
+          <caption>Dúvida, risco de lavar em casa e prazo, peça por peça</caption>
+          <thead>
+            <tr><th scope="col">Peça</th><th scope="col">Dúvida comum do cliente</th><th scope="col">Risco de lavar em casa</th><th scope="col">O que define o prazo <span class="marcador">[PREENCHER C-18]</span></th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="sofa" class="icon"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"/><path d="M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"/><path d="M4 18v2"/><path d="M20 18v2"/><path d="M12 4v9"/></svg>Sofá</th><td data-label="Dúvida comum do cliente">A mancha sai sem desbotar o tecido?</td><td data-label="Risco de lavar em casa">Esfregar com produto caseiro abre a trama e deixa auréola em volta da mancha</td><td data-label="O que define o prazo">Tecido, espessura da espuma e ventilação da sala</td></tr>
+            <tr><th scope="row"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="bed-double" class="icon"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></svg>Colchão</th><td data-label="Dúvida comum do cliente">Vou conseguir dormir nele à noite?</td><td data-label="Risco de lavar em casa">Água demais desce para a espuma e volta como cheiro de mofo</td><td data-label="O que define o prazo">Faces limpas, densidade da espuma e umidade do dia</td></tr>
+            <tr><th scope="row"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="rectangle-horizontal" class="icon"><rect width="20" height="12" x="2" y="6" rx="2"/></svg>Tapete</th><td data-label="Dúvida comum do cliente">Ele vai encolher ou soltar a cor?</td><td data-label="Risco de lavar em casa">Lã e fibras naturais encolhem e mancham com excesso de água; a base pode descolar</td><td data-label="O que define o prazo">Fibra, altura do pelo e tamanho da peça</td></tr>
+            <tr><th scope="row"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="theater" class="icon"><path d="M2 10s3-3 3-8"/><path d="M22 10s-3-3-3-8"/><path d="M10 2c0 4.4-3.6 8-8 8"/><path d="M14 2c0 4.4 3.6 8 8 8"/><path d="M2 10s2 2 2 5"/><path d="M22 10s-2 2-2 5"/><path d="M8 15h8"/><path d="M2 22v-1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1"/><path d="M14 22v-1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1"/></svg>Cortina</th><td data-label="Dúvida comum do cliente">Ela volta com a mesma medida?</td><td data-label="Risco de lavar em casa">Tecido e forro encolhem de forma diferente na máquina; o blackout pode rachar</td><td data-label="O que define o prazo">Tecido, forro e desmontagem do trilho <span class="marcador">[PREENCHER C-05]</span></td></tr>
+            <tr><th scope="row"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="blinds" class="icon"><path d="M3 3h18"/><path d="M20 7H8"/><path d="M20 11H8"/><path d="M10 19h10"/><path d="M8 15h12"/><path d="M4 3v14"/><circle cx="4" cy="19" r="2"/></svg>Persiana</th><td data-label="Dúvida comum do cliente">Precisa tirar da janela?</td><td data-label="Risco de lavar em casa">Lâminas entortam e o mecanismo trava quando molha por dentro</td><td data-label="O que define o prazo">Modelo, material e quantidade de janelas</td></tr>
+            <tr><th scope="row"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="grid-3x3" class="icon"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 3v18"/><path d="M15 3v18"/></svg>Carpete</th><td data-label="Dúvida comum do cliente">Dá para usar o cômodo no mesmo dia?</td><td data-label="Risco de lavar em casa">Água em excesso encharca a base colada no piso e demora dias para sair</td><td data-label="O que define o prazo">Área, circulação e ventilação do ambiente</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="guia-clima">
+        <h3>Por que a secagem muda ao longo do ano em Cuiabá</h3>
+        <p>A secagem depende do clima do dia, e em Cuiabá ele muda muito ao longo do ano. A estação seca vai de junho a setembro, quando a umidade relativa do ar pode cair abaixo de 15%, e as chuvas ocupam o restante do ano, segundo o verbete de <a href="https://pt.wikipedia.org/wiki/Cuiab%C3%A1" rel="noopener">Cuiabá na Wikipédia</a>. Na seca, o tecido seca mais rápido, mas junta mais poeira e fumaça; nas chuvas, a secagem é mais lenta e pede cômodo ventilado. O prazo de cada peça, <span class="marcador">[PREENCHER C-18]</span>, vem no orçamento.</p>
+      </div>
+      <div class="callout">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="info" class="icon"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+        <p><strong>Antes de tentar em casa, fotografe.</strong> A foto da mancha como ela está hoje diz mais do que a descrição depois de três produtos diferentes, porque o que já foi aplicado muda o que ainda dá para fazer no tecido.</p>
+      </div>
+      <div class="process-foot">
+        <p class="section-close">Se a sua dúvida não está na tabela, procure em <a href="/agnaldo-previa/perguntas-frequentes/">todas as perguntas frequentes</a>, que tratam de fotos, medidas e secagem em Cuiabá e Várzea Grande.</p>
+        <a class="btn btn--dark" href="https://wa.me/[PREENCHER-WHATSAPP]?text=Ol%C3%A1!%20Quero%20pedir%20um%20or%C3%A7amento%20em%20Cuiab%C3%A1%20ou%20V%C3%A1rzea%20Grande.%20Posso%20enviar%20fotos%20da%20pe%C3%A7a%3F" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" data-marca="whatsapp" class="icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Enviar fotos da peça pelo WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VARIA: áreas atendidas + formulário e card de contato (form-contato-split) -->
+  <section class="section section--soft" data-sop="areas" id="orcamento" aria-labelledby="titulo-areas">
+    <div class="container">
+      <header class="sec-head">
+        <h2 id="titulo-areas" class="h2">Áreas atendidas em Cuiabá e Várzea Grande</h2>
+        <p class="lead">Cuiabá e Várzea Grande são as duas cidades atendidas pela <strong>Agnaldo Higienização</strong>, com sede em Várzea Grande&nbsp;-&nbsp;MT. Os bairros abaixo têm página própria com os serviços da região [CONFIRMAR C-06/C-07]; se o seu não aparece, mande o endereço completo junto com o pedido para combinarmos dia e logística <span class="marcador">[PREENCHER C-05]</span>.</p>
+      </header>
+      <ul class="areas-grid" aria-label="Bairros atendidos em Cuiabá e Várzea Grande">
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span><a href="/agnaldo-previa/cuiaba-mt/jardim-das-americas/">Jardim das Américas</a><small>Cuiabá</small></span></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span><a href="/agnaldo-previa/cuiaba-mt/duque-de-caxias/">Duque de Caxias</a><small>Cuiabá</small></span></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span><a href="/agnaldo-previa/cuiaba-mt/goiabeiras/">Goiabeiras</a><small>Cuiabá</small></span></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span><a href="/agnaldo-previa/cuiaba-mt/santa-rosa/">Santa Rosa</a><small>Cuiabá</small></span></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span><a href="/agnaldo-previa/cuiaba-mt/bosque-da-saude/">Bosque da Saúde</a><small>Cuiabá</small></span></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span><a href="/agnaldo-previa/cuiaba-mt/jardim-italia/">Jardim Itália</a><small>Cuiabá</small></span></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span><a href="/agnaldo-previa/varzea-grande-mt/cristo-rei/">Cristo Rei</a><small>Várzea Grande</small></span></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span><a href="/agnaldo-previa/varzea-grande-mt/jardim-gloria/">Jardim Glória</a><small>Várzea Grande</small></span></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span><a href="/agnaldo-previa/varzea-grande-mt/parque-do-lago/">Parque do Lago</a><small>Várzea Grande</small></span></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span><a href="/agnaldo-previa/varzea-grande-mt/costa-verde/">Costa Verde</a><small>Várzea Grande</small></span></li>
+      </ul>
+      <p class="section-close">Cada cidade tem conteúdo próprio: veja os <a href="/agnaldo-previa/cuiaba-mt/">bairros atendidos em Cuiabá</a>, a página de <a href="/agnaldo-previa/varzea-grande-mt/">higienização de estofados em Várzea Grande</a> e o mapa das <a href="/agnaldo-previa/areas-atendidas/">áreas atendidas em Cuiabá e Várzea Grande</a>.</p>
+
+      <div class="contact-split">
+        <!-- FIXO: formulário de orçamento (campos da home em docs/07-design-system.json, components.form; marcação lida por assets/js/main.js) -->
+        <form class="quote-form" action="/agnaldo-previa/api/lead" method="post" data-lead-form novalidate>
+          <h3>Pedir orçamento pelo formulário</h3>
+          <p>Mande os dados por aqui e a resposta chega no seu WhatsApp.</p>
+          <input type="hidden" name="form_id" value="home-orcamento">
+          <input type="hidden" name="pagina_origem" value="">
+          <input type="hidden" name="landing_page" value="">
+          <input type="hidden" name="referrer" value="">
+          <input type="hidden" name="utm_source" value="">
+          <input type="hidden" name="utm_medium" value="">
+          <input type="hidden" name="utm_campaign" value="">
+          <input type="hidden" name="utm_term" value="">
+          <input type="hidden" name="utm_content" value="">
+          <input type="hidden" name="ts" value="">
+          <div class="hp" aria-hidden="true"><label for="hp-f">Não preencha este campo</label><input id="hp-f" name="confirme_site" type="text" tabindex="-1" autocomplete="off"></div>
+          <div class="field-grid">
+            <div class="field">
+              <label for="f-nome">Nome</label>
+              <input id="f-nome" name="nome" type="text" autocomplete="name" maxlength="80" required data-validar aria-describedby="f-nome-erro">
+              <p class="field-error" id="f-nome-erro"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="circle-alert" class="icon"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg><span data-msg></span></p>
+            </div>
+            <div class="field">
+              <label for="f-telefone">Celular com WhatsApp</label>
+              <input id="f-telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(65) 99999-9999" maxlength="20" required data-validar aria-describedby="f-telefone-erro">
+              <p class="field-error" id="f-telefone-erro"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="circle-alert" class="icon"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg><span data-msg></span></p>
+            </div>
+            <div class="field">
+              <label for="f-servico">Serviço <span class="opt">(opcional)</span></label>
+              <select id="f-servico" name="servico" data-validar aria-describedby="f-servico-erro">
+                <option value="">Escolha o serviço</option>
+                <option>Higienização de estofados</option>
+                <option>Limpeza de sofá</option>
+                <option>Limpeza de colchão</option>
+                <option>Limpeza de poltrona</option>
+                <option>Limpeza de cadeiras</option>
+                <option>Limpeza de tapetes</option>
+                <option>Limpeza de cortinas</option>
+                <option>Limpeza de persianas</option>
+                <option>Limpeza de carpete</option>
+                <option>Serviços para empresas</option>
+              </select>
+              <p class="field-error" id="f-servico-erro"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="circle-alert" class="icon"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg><span data-msg></span></p>
+            </div>
+            <div class="field">
+              <label for="f-bairro">Bairro e cidade <span class="opt">(opcional)</span></label>
+              <input id="f-bairro" name="bairro" type="text" autocomplete="address-level3" maxlength="60" placeholder="Ex.: Jardim Itália">
+            </div>
+            <div class="field field--full">
+              <label for="f-mensagem">O que aconteceu com a peça <span class="opt">(opcional)</span></label>
+              <textarea id="f-mensagem" name="mensagem" maxlength="600" placeholder="Ex.: sofá de 3 lugares com mancha de café no assento"></textarea>
+            </div>
+          </div>
+          <div class="consent">
+            <input id="f-consentimento" name="consentimento" type="checkbox" value="sim" required data-validar aria-describedby="f-consentimento-erro">
+            <label for="f-consentimento">Autorizo o uso destes dados para responder ao meu pedido, conforme a <a href="/agnaldo-previa/politica-de-privacidade/">política de privacidade</a>.</label>
+          </div>
+          <p class="field-error" id="f-consentimento-erro"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="circle-alert" class="icon"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg><span data-msg></span></p>
+          <button class="btn btn--dark btn--block" type="submit">Pedir orçamento da limpeza<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+          <div class="form-status form-status--erro" data-form-status role="status">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="circle-alert" class="icon"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+            <p>Não conseguimos registrar o pedido agora. Seus dados continuam preenchidos: <a href="https://wa.me/[PREENCHER-WHATSAPP]?text=Ol%C3%A1!%20Quero%20pedir%20um%20or%C3%A7amento%20em%20Cuiab%C3%A1%20ou%20V%C3%A1rzea%20Grande.%20Posso%20enviar%20fotos%20da%20pe%C3%A7a%3F" rel="noopener">continuar o pedido pelo WhatsApp</a> ou ligue para <span class="nowrap">[PREENCHER: telefone]</span>.</p>
+          </div>
+        </form>
+
+        <!-- FIXO: card de contato (NAP idêntico em todo o site; C-04, C-09, C-12) -->
+        <aside class="nap-card" aria-labelledby="titulo-nap">
+          <h3 id="titulo-nap">Endereço e horários da sede em Várzea Grande</h3>
+          <p>Os dados de contato da sede, publicados do mesmo jeito em todo o site.</p>
+          <address class="nap-address">
+            <dl class="nap-list">
+              <div><dt><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Endereço</dt><dd>[PREENCHER: logradouro, número e bairro], Várzea Grande&nbsp;-&nbsp;MT, <span class="marcador">[PREENCHER: CEP]</span></dd></div>
+              <div><dt><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="phone" class="icon"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>Telefone e WhatsApp</dt><dd>[PREENCHER: telefone e WhatsApp]</dd></div>
+              <div><dt><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="clock" class="icon"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Horários</dt><dd>[PREENCHER: dias e horários de atendimento]</dd></div>
+            </dl>
+          </address>
+          <div class="nap-actions">
+            <a class="btn btn--outline" href="/agnaldo-previa/contato/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="navigation" class="icon"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>Ver endereço, horários e orçamento</a>
+          </div>
+          <!-- SECAO-PENDENTE: mapa estático com botão "Ver no mapa" (C-04 endereço e coordenadas, C-23 Google Business Profile) -->
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- VARIA: quem é a empresa (entidade; split imagem à esquerda + 6 fatos oficiais) -->
+  <section class="section sobre" aria-labelledby="titulo-sobre">
+    <div class="container split">
+      <figure class="media media--4x5 split__media ph" role="img" aria-label="Equipe da Agnaldo Higienização na sede em Várzea Grande" data-ph="Foto real obrigatória (não gerar): equipe ou fachada da sede em Várzea Grande, com autorização do cliente">
+        <img src="/agnaldo-previa/assets/img/home-sobre-sede-varzea-grande.webp" width="960" height="1200" alt="Equipe da Agnaldo Higienização na sede em Várzea Grande" loading="lazy" decoding="async">
+      </figure>
+      <div class="split__copy">
+        <h2 id="titulo-sobre" class="h2-split">Quem é a Agnaldo Higienização, de Várzea Grande</h2>
+        <p class="lead">A <dfn>Agnaldo Higienização</dfn> é uma empresa de limpeza e higienização de sofá, tapetes e cortinas, com sede em Várzea Grande&nbsp;-&nbsp;MT e atendimento em Cuiabá e Várzea Grande; também atende colchões, poltronas, cadeiras, persianas e carpete <span class="marcador">[CONFIRMAR C-03]</span>. Os dados oficiais da empresa ficam reunidos abaixo e são os mesmos em todas as páginas do site.</p>
+        <ul class="check-grid check-grid--plain">
+          <li><span class="check-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="check" class="icon"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Razão social</strong><span><span class="marcador">[PREENCHER C-02]</span></span></span></li>
+          <li><span class="check-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="check" class="icon"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>CNPJ</strong><span><span class="marcador">[PREENCHER C-02]</span></span></span></li>
+          <li><span class="check-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="check" class="icon"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Sede</strong><span>Várzea Grande&nbsp;-&nbsp;MT</span></span></li>
+          <li><span class="check-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="check" class="icon"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Área atendida</strong><span>Cuiabá e Várzea Grande</span></span></li>
+          <li><span class="check-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="check" class="icon"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Forma de atendimento</strong><span><span class="marcador">[PREENCHER C-05]</span></span></span></li>
+          <li><span class="check-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="check" class="icon"><path d="M20 6 9 17l-5-5"/></svg></span><span><strong>Fundação</strong><span><span class="marcador">[PREENCHER C-13]</span></span></span></li>
+        </ul>
+        <p class="section-close">História, responsáveis pelo atendimento e a política editorial do site ficam na página institucional: <a href="/agnaldo-previa/sobre/">conheça a empresa</a> e veja onde fica a sede em Várzea Grande.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECAO-PENDENTE: depoimentos (3 cards de clientes reais com autorização: C-25; nota do Google: C-15) -->
+  <!-- SECAO-PENDENTE: premios-certificacoes (selos e cursos reais: N-04) -->
+  <!-- SECAO-PENDENTE: resultados antes e depois e cases (fotos reais do cliente: C-28) -->
+  <!-- SECAO-PENDENTE: parceiros (logos de empresas atendidas: C-26 e V-10) -->
+
+  <!-- VARIA: FAQ (10 perguntas do ICP, idêntico ao FAQPage do JSON-LD) -->
+  <section class="section section--soft" data-sop="faq" aria-labelledby="titulo-faq">
+    <div class="container">
+      <header class="sec-head sec-head--center">
+        <h2 id="titulo-faq" class="h2">Perguntas frequentes sobre a Agnaldo Higienização</h2>
+        <p class="lead">Dez respostas curtas sobre a <strong>Agnaldo Higienização</strong>: o que é limpo, quanto custa, quanto tempo leva para secar, quais bairros de Cuiabá e Várzea Grande são atendidos e o que fazer até a limpeza.</p>
+      </header>
+      <div class="faq-grid">
+        <div class="faq-list">
+          <details>
+            <summary>O que a Agnaldo Higienização limpa?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="plus" class="icon"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
+            <div><p>A Agnaldo Higienização faz a limpeza de sofá, tapetes e cortinas em Cuiabá e Várzea Grande e atende também colchões, poltronas, cadeiras estofadas, persianas e carpetes <span class="marcador">[CONFIRMAR C-03]</span>. Para comparar a indicação de cada serviço, veja a página com <a href="/agnaldo-previa/servicos/">todos os serviços de higienização</a>.</p></div>
+          </details>
+          <details>
+            <summary>Como peço o orçamento?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="plus" class="icon"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
+            <div><p>Escreva no WhatsApp <span class="marcador">[PREENCHER: número]</span> ou use o formulário desta página. Três informações bastam para começar: a peça, o bairro e o problema. Junte uma foto da peça inteira e outra bem de perto da mancha; para tapete, cortina, persiana e carpete, acrescente largura e comprimento. O valor vem pela própria conversa, sem visita <span class="marcador">[CONFIRMAR C-20]</span>.</p></div>
+          </details>
+          <details>
+            <summary>Quanto custa limpar sofá, tapete ou colchão?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="plus" class="icon"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
+            <div><p>Não existe preço único, porque cada peça pesa de um jeito no trabalho. No sofá contam o número de lugares e o tecido; no tapete, os metros quadrados e a fibra; no colchão, o tamanho e se as duas faces serão limpas. Tabela de referência: <span class="marcador">[PREENCHER C-19]</span>. Com fotos e medidas, você recebe o valor fechado antes de agendar <span class="marcador">[CONFIRMAR C-20]</span>.</p></div>
+          </details>
+          <details>
+            <summary>Em quanto tempo o sofá fica seco?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="plus" class="icon"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
+            <div><p>O tempo varia com o tecido, a espessura da espuma, a ventilação do cômodo e a umidade do dia em Cuiabá e Várzea Grande. Na seca, entre junho e setembro, a secagem tende a ser mais rápida; nas chuvas, mais lenta. O prazo de cada peça, <span class="marcador">[PREENCHER C-18]</span>, vem no orçamento, com a orientação de uso até secar.</p></div>
+          </details>
+          <details>
+            <summary>Toda mancha sai com a limpeza?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="plus" class="icon"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
+            <div><p>Não. Café derramado há pouco costuma sair; caneta antiga, queimadura e área desbotada pelo sol normalmente não, porque a cor ou a própria fibra já mudou. Entre esses extremos, o resultado depende da idade da mancha e do que já foi aplicado nela. Fotos de perto permitem dizer o que esperar antes de você fechar.</p></div>
+          </details>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Quais bairros de Cuiabá e Várzea Grande são atendidos?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="plus" class="icon"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
+            <div><p>A área de atendimento são as cidades de Cuiabá e Várzea Grande. Têm página própria os bairros Jardim das Américas, Duque de Caxias, Goiabeiras, Santa Rosa, Bosque da Saúde e Jardim Itália, em Cuiabá, e Cristo Rei, Jardim Glória, Parque do Lago e Costa Verde, em Várzea Grande [CONFIRMAR C-06/C-07]. Mora em outro bairro? Informe o endereço no pedido.</p></div>
+          </details>
+          <details>
+            <summary>Vocês buscam o tapete e a cortina em casa?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="plus" class="icon"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
+            <div><p>Retirada e entrega de tapetes e cortinas, desmontagem e reinstalação de cortinas e persianas: <span class="marcador">[PREENCHER C-05]</span>. Ao pedir o orçamento, informe o bairro, o tamanho da peça e o andar do imóvel. Esses dados ajudam a combinar o dia e a forma de atendimento sem surpresa no valor final.</p></div>
+          </details>
+          <details>
+            <summary>O produto é seguro perto de crianças e pets?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="plus" class="icon"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
+            <div><p>Produtos usados, cheiro depois do serviço e cuidados com crianças, idosos e animais em casa: <span class="marcador">[PREENCHER C-32]</span>. Ao pedir o orçamento, avise se há bebê, pessoa com alergia ou pet que usa o sofá, porque essa informação orienta a escolha do produto e o uso da peça até o fim da secagem.</p></div>
+          </details>
+          <details>
+            <summary>Como cuidar da mancha enquanto espera a limpeza?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="plus" class="icon"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
+            <div><p>Tire o excesso com papel toalha, tocando sem pressionar, e pare por aí. Escova, mistura de produtos e secador costumam piorar: a escova abre a trama, a mistura pode manchar e o calor fixa a sujeira. Fotografe a área com luz do dia e anote quando aconteceu e o que já foi usado.</p></div>
+          </details>
+          <details>
+            <summary>A Agnaldo Higienização atende empresas?<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="plus" class="icon"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary>
+            <div><p>O atendimento a escritórios, clínicas, escolas e condomínios, com proposta por lote, está em confirmação <span class="marcador">[CONFIRMAR C-26]</span>. Se a sua empresa precisa limpar cadeiras, sofás de recepção, carpete ou cortinas, veja a página de <a href="/agnaldo-previa/higienizacao-para-empresas-cuiaba-mt/">higienização para empresas</a> e informe a quantidade de peças por modelo e o melhor horário.</p></div>
+          </details>
+        </div>
+      </div>
+      <p class="section-close">Para dúvidas sobre fotos, medidas, secagem e atendimento, há uma página com <a href="/agnaldo-previa/perguntas-frequentes/">todas as perguntas frequentes</a> do site.</p>
+    </div>
+  </section>
+
+  <!-- VARIA: blog (3 artigos do lançamento: B01, B04 e B06; grade de cards 2 de 2) -->
+  <section class="section" data-sop="blog" aria-labelledby="titulo-blog">
+    <div class="container">
+      <header class="sec-head">
+        <h2 id="titulo-blog" class="h2">Guias de limpeza de sofá e tapete para o clima de Cuiabá</h2>
+        <p class="lead">Três leituras curtas da <strong>Agnaldo Higienização</strong> sobre o que o calor, a seca e a fibra fazem com o sofá e o tapete em Cuiabá. Servem para cuidar melhor da peça entre uma limpeza e outra e para chegar ao orçamento sabendo o que perguntar.</p>
+      </header>
+      <div class="post-grid">
+        <article class="post-card">
+          <figure class="media media--16x9 ph" role="img" aria-label="Sofá de tecido secando em sala ventilada com a janela aberta" data-ph="Foto real: sofá de tecido secando em sala ventilada, janela aberta, luz de fim de tarde">
+            <img src="/agnaldo-previa/assets/img/blog-sofa-secagem-capa.webp" width="800" height="450" alt="Sofá de tecido secando em sala ventilada com a janela aberta" loading="lazy" decoding="async">
+          </figure>
+          <div class="post-card__body">
+            <span class="badge">Sofás e estofados</span>
+            <h3><a href="/agnaldo-previa/blog/quanto-tempo-o-sofa-demora-para-secar/">Quanto tempo o sofá demora para secar</a></h3>
+            <p>Seca ou chuva: o papel do tecido, da espuma e da ventilação na secagem em Cuiabá.</p>
+            <span class="card-link" aria-hidden="true">Ler o guia de secagem<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          </div>
+        </article>
+        <article class="post-card">
+          <figure class="media media--16x9 ph" role="img" aria-label="Verso de um tapete dobrado mostrando a base e a franja" data-ph="Foto real: verso de tapete dobrado mostrando base, trama e franja">
+            <img src="/agnaldo-previa/assets/img/blog-tipos-fibra-tapete-capa.webp" width="800" height="450" alt="Verso de um tapete dobrado mostrando a base e a franja" loading="lazy" decoding="async">
+          </figure>
+          <div class="post-card__body">
+            <span class="badge">Tapetes</span>
+            <h3><a href="/agnaldo-previa/blog/tipos-de-fibra-de-tapete/">Tipos de fibra de tapete</a></h3>
+            <p>Lã, sisal, juta, algodão e sintéticos reagem de forma diferente à água e ao atrito.</p>
+            <span class="card-link" aria-hidden="true">Ler o guia de fibras<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          </div>
+        </article>
+        <article class="post-card">
+          <figure class="media media--16x9 ph" role="img" aria-label="Cortina clara e sofá em sala com luz forte de fim de tarde" data-ph="Foto real: sala com cortina clara e sofá sob luz forte e seca de fim de tarde em Cuiabá">
+            <img src="/agnaldo-previa/assets/img/blog-estofados-seca-capa.webp" width="800" height="450" alt="Cortina clara e sofá em sala com luz forte de fim de tarde" loading="lazy" decoding="async">
+          </figure>
+          <div class="post-card__body">
+            <span class="badge">Cuidados na seca</span>
+            <h3><a href="/agnaldo-previa/blog/cuidados-com-estofados-na-seca/">Cuidados com estofados na seca</a></h3>
+            <p>Poeira e fumaça nos tecidos: a rotina do sofá, do colchão e das cortinas nesses meses.</p>
+            <span class="card-link" aria-hidden="true">Ler o guia da seca<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          </div>
+        </article>
+      </div>
+      <div class="center-action">
+        <a class="btn btn--outline" href="/agnaldo-previa/blog/">Ler os guias de cuidado com tecidos<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIXO: CTA final em faixa aqua com formulário curto -->
+  <section class="band-aqua cta-final" data-sop="cta-final" aria-labelledby="titulo-cta">
+    <div class="container cta-final__in">
+      <div>
+        <h2 id="titulo-cta">Peça a limpeza de sofá, tapetes e cortinas</h2>
+        <p>Informe o celular e respondemos no WhatsApp, no horário de atendimento <span class="marcador">[PREENCHER C-12]</span>, para saber qual é a peça e o que aconteceu com ela.</p>
+      </div>
+      <form class="cta-form" action="/agnaldo-previa/api/lead" method="post" data-lead-form novalidate>
+        <input type="hidden" name="form_id" value="home-cta-final">
+        <input type="hidden" name="pagina_origem" value="">
+        <input type="hidden" name="landing_page" value="">
+        <input type="hidden" name="referrer" value="">
+        <input type="hidden" name="utm_source" value="">
+        <input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" value="">
+        <input type="hidden" name="utm_term" value="">
+        <input type="hidden" name="utm_content" value="">
+        <input type="hidden" name="ts" value="">
+        <div class="hp" aria-hidden="true"><label for="hp-c">Não preencha este campo</label><input id="hp-c" name="confirme_site" type="text" tabindex="-1" autocomplete="off"></div>
+        <label for="c-telefone">Celular com WhatsApp</label>
+        <div class="cta-form__row">
+          <input id="c-telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(65) 99999-9999" maxlength="20" required data-validar aria-describedby="c-telefone-erro">
+          <button class="btn btn--dark" type="submit">Pedir contato pelo WhatsApp<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+        </div>
+        <p class="field-error" id="c-telefone-erro"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="circle-alert" class="icon"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg><span data-msg></span></p>
+        <div class="consent">
+          <input id="c-consentimento" name="consentimento" type="checkbox" value="sim" required data-validar aria-describedby="c-consentimento-erro">
+          <label for="c-consentimento">Autorizo o contato pelo WhatsApp, conforme a <a href="/agnaldo-previa/politica-de-privacidade/">política de privacidade</a>.</label>
+        </div>
+        <p class="field-error" id="c-consentimento-erro"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="circle-alert" class="icon"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg><span data-msg></span></p>
+        <div class="form-status form-status--erro" data-form-status role="status">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="circle-alert" class="icon"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+          <p>Não conseguimos registrar o pedido agora: <a href="https://wa.me/[PREENCHER-WHATSAPP]?text=Ol%C3%A1!%20Quero%20pedir%20um%20or%C3%A7amento%20em%20Cuiab%C3%A1%20ou%20V%C3%A1rzea%20Grande.%20Posso%20enviar%20fotos%20da%20pe%C3%A7a%3F" rel="noopener">continuar pelo WhatsApp</a>.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- FIXO: rodapé (docs/06-mega-menu.md, seção 4) -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="/agnaldo-previa/assets/marca/logo-branca.svg" width="260" height="48" alt="Agnaldo Higienização" loading="lazy">
+        <p>A Agnaldo Higienização é uma empresa de limpeza e higienização de sofá, tapetes e cortinas, com sede em Várzea Grande&nbsp;-&nbsp;MT e atendimento em Cuiabá e Várzea Grande.</p>
+      </div>
+      <div class="footer-top__acoes">
+        <a class="btn btn--primary" href="https://wa.me/[PREENCHER-WHATSAPP]?text=Ol%C3%A1!%20Quero%20pedir%20um%20or%C3%A7amento%20em%20Cuiab%C3%A1%20ou%20V%C3%A1rzea%20Grande.%20Posso%20enviar%20fotos%20da%20pe%C3%A7a%3F" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" data-marca="whatsapp" class="icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Pedir orçamento pelo WhatsApp</a>
+        <a class="btn btn--inverse" href="tel:[PREENCHER C-09]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="phone" class="icon"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>Ligar para [PREENCHER: telefone]</a>
+      </div>
+    </div>
+    <div class="footer-grid">
+      <nav class="footer-col footer-col--voce" aria-label="Serviços para você">
+        <p class="rodape-titulo">Para você</p>
+        <ul>
+          <li><a href="/agnaldo-previa/higienizacao-de-estofados-cuiaba-mt/">Higienização de estofados</a></li>
+          <li><a href="/agnaldo-previa/limpeza-de-sofa-cuiaba-mt/">Limpeza de sofá</a></li>
+          <li><a href="/agnaldo-previa/limpeza-de-colchao-cuiaba-mt/">Limpeza de colchão</a></li>
+          <li><a href="/agnaldo-previa/limpeza-de-poltrona-cuiaba-mt/">Limpeza de poltrona</a></li>
+          <li><a href="/agnaldo-previa/limpeza-de-cadeiras-cuiaba-mt/">Limpeza de cadeiras</a></li>
+          <li><a href="/agnaldo-previa/limpeza-de-tapetes-cuiaba-mt/">Limpeza de tapetes</a></li>
+          <li><a href="/agnaldo-previa/limpeza-de-cortinas-cuiaba-mt/">Limpeza de cortinas</a></li>
+          <li><a href="/agnaldo-previa/limpeza-de-persianas-cuiaba-mt/">Limpeza de persianas</a></li>
+          <li><a href="/agnaldo-previa/limpeza-de-carpete-cuiaba-mt/">Limpeza de carpete</a></li>
+          <li><a href="/agnaldo-previa/varzea-grande-mt/#servicos">Os mesmos serviços em Várzea Grande</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col footer-col--empresa" aria-label="Serviços para empresas">
+        <p class="rodape-titulo">Para empresa</p>
+        <ul>
+          <li><a href="/agnaldo-previa/higienizacao-para-empresas-cuiaba-mt/">Higienização para empresas</a></li>
+          <li><a href="/agnaldo-previa/higienizacao-para-empresas-cuiaba-mt/#estofados">Estofados de recepção</a></li>
+          <li><a href="/agnaldo-previa/higienizacao-para-empresas-cuiaba-mt/#cadeiras">Cadeiras de escritório</a></li>
+          <li><a href="/agnaldo-previa/higienizacao-para-empresas-cuiaba-mt/#carpete">Carpete comercial</a></li>
+          <li><a href="/agnaldo-previa/higienizacao-para-empresas-cuiaba-mt/#cortinas">Cortinas e persianas</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col footer-col--institucional" aria-label="Institucional">
+        <p class="rodape-titulo">Institucional</p>
+        <ul>
+          <li><a href="/agnaldo-previa/sobre/">Sobre a empresa</a></li>
+          <li><a href="/agnaldo-previa/servicos/">Todos os serviços</a></li>
+          <li><a href="/agnaldo-previa/perguntas-frequentes/">Perguntas frequentes</a></li>
+          <li><a href="/agnaldo-previa/blog/">Guias de cuidado</a></li>
+          <li><a href="/agnaldo-previa/politica-editorial/">Política editorial</a></li>
+          <li><a href="/agnaldo-previa/contato/">Contato e orçamento</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col footer-col--contato">
+        <p class="rodape-titulo">Onde estamos</p>
+        <address class="footer-nap">
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="map-pin" class="icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><a href="/agnaldo-previa/contato/#como-chegar">[PREENCHER: endereço], Várzea Grande&nbsp;-&nbsp;MT</a></p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="phone" class="icon"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg><span>[PREENCHER: telefone e WhatsApp]</span></p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="mail" class="icon"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg><span><span class="marcador">[PREENCHER: e-mail]</span></span></p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="clock" class="icon"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>[PREENCHER: horário de atendimento]</span></p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="badge-check" class="icon"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m16 9-5.5 5.5L8 12"/></svg><span>[PREENCHER: razão social]</span></p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="badge-check" class="icon"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m16 9-5.5 5.5L8 12"/></svg><span>CNPJ <span class="marcador">[PREENCHER]</span></span></p>
+        </address>
+      </div>
+    </div>
+    <nav class="footer-bairros" aria-label="Bairros atendidos em Cuiabá e Várzea Grande">
+      <div class="footer-bairros__head">
+        <p class="rodape-titulo">Bairros atendidos</p>
+        <a href="/agnaldo-previa/areas-atendidas/">Áreas atendidas em Cuiabá e Várzea Grande<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="arrow-right" class="icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+      <ul>
+        <li><a href="/agnaldo-previa/cuiaba-mt/jardim-das-americas/">Jardim das Américas</a></li>
+        <li><a href="/agnaldo-previa/cuiaba-mt/duque-de-caxias/">Duque de Caxias</a></li>
+        <li><a href="/agnaldo-previa/cuiaba-mt/goiabeiras/">Goiabeiras</a></li>
+        <li><a href="/agnaldo-previa/cuiaba-mt/santa-rosa/">Santa Rosa</a></li>
+        <li><a href="/agnaldo-previa/cuiaba-mt/bosque-da-saude/">Bosque da Saúde</a></li>
+        <li><a href="/agnaldo-previa/cuiaba-mt/jardim-italia/">Jardim Itália</a></li>
+        <li><a href="/agnaldo-previa/varzea-grande-mt/cristo-rei/">Cristo Rei</a></li>
+        <li><a href="/agnaldo-previa/varzea-grande-mt/jardim-gloria/">Jardim Glória</a></li>
+        <li><a href="/agnaldo-previa/varzea-grande-mt/parque-do-lago/">Parque do Lago</a></li>
+        <li><a href="/agnaldo-previa/varzea-grande-mt/costa-verde/">Costa Verde</a></li>
+      </ul>
+    </nav>
+    <!-- SECAO-PENDENTE: faixa de selos (avaliação no Google com fonte: C-15) e redes sociais (data-marca: C-24) -->
+    <div class="footer-legal">
+      <p>&copy; 2026 Agnaldo Higienização, [PREENCHER: razão social]. CNPJ <span class="marcador">[PREENCHER]</span>. Todos os direitos reservados.</p>
+      <ul>
+        <li><a href="/agnaldo-previa/politica-de-privacidade/">Política de privacidade</a></li>
+        <li><a href="/agnaldo-previa/politica-de-cookies/">Política de cookies</a></li>
+        <li><a href="/agnaldo-previa/politica-de-cookies/#escolha" data-cookie-prefs>Preferências de cookies</a></li>
+        <li><a href="/agnaldo-previa/termos-de-uso/">Termos de uso</a></li>
+        <li><a href="/agnaldo-previa/entitymap.html">Mapa de entidades</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- FIXO: botão flutuante de WhatsApp -->
+<a class="wa-float" href="https://wa.me/[PREENCHER-WHATSAPP]?text=Ol%C3%A1!%20Quero%20pedir%20um%20or%C3%A7amento%20em%20Cuiab%C3%A1%20ou%20V%C3%A1rzea%20Grande.%20Posso%20enviar%20fotos%20da%20pe%C3%A7a%3F" rel="noopener" aria-label="Pedir orçamento pelo WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" data-marca="whatsapp" class="icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+
+<!-- FIXO: aviso de cookies (LGPD). Consent Mode v2 em /assets/js/consent.js; interface em /assets/js/cookies.js. Oculto até o JS decidir mostrar. -->
+<div class="cookie-banner" id="aviso-cookies" role="region" aria-labelledby="cookie-titulo" tabindex="-1" hidden>
+  <div class="cookie-banner__texto">
+    <p class="cookie-banner__titulo" id="cookie-titulo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="cookie" class="icon"><path d="M11 17h.01"/><path d="M11.496 2c.324-.016.558.292.529.615a4 4 0 004.235 4.368.713.713 0 01.758.757 4 4 0 004.366 4.237c.323-.03.63.204.614.527a10 10 0 01-2.915 6.566A1 1 0 114.93 4.918 10 10 0 0111.496 2"/><path d="M12 12h.01"/><path d="M16 16h.01"/><path d="M16 3h.01"/><path d="M21 4h.01"/><path d="M21 8h.01"/><path d="M7 14h.01"/><path d="M9 8h.01"/></svg>Cookies neste site</p>
+    <p>Usamos cookies necessários e, só com a sua autorização, de análise e de marketing. Você muda a escolha depois, no rodapé. <a href="/agnaldo-previa/politica-de-cookies/">Política de cookies</a></p>
+  </div>
+  <div class="cookie-banner__acoes">
+    <button type="button" class="btn btn--outline" data-cookie-acao="recusar">Recusar</button>
+    <button type="button" class="btn btn--outline" data-cookie-acao="personalizar">Personalizar</button>
+    <button type="button" class="btn btn--outline" data-cookie-acao="aceitar">Aceitar todos</button>
+  </div>
+</div>
+<dialog class="cookie-dialog" id="preferencias-cookies" aria-labelledby="cookie-prefs-titulo">
+  <div class="cookie-dialog__in">
+    <div class="cookie-dialog__topo">
+      <h2 id="cookie-prefs-titulo">Preferências de cookies</h2>
+      <button type="button" class="cookie-fechar" data-cookie-acao="fechar" aria-label="Fechar as preferências de cookies"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" data-lucide="x" class="icon"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+    </div>
+    <p>Escolha o que este site pode usar neste navegador. Sem a sua autorização, só os cookies necessários ficam ativos. Detalhes na <a href="/agnaldo-previa/politica-de-cookies/">política de cookies</a>.</p>
+    <div class="cookie-cat">
+      <div><h3 id="cookie-cat-nec">Necessários</h3><p id="cookie-cat-nec-d">Guardam a sua escolha e mantêm funções básicas, como o envio do formulário. Sempre ativos.</p></div>
+      <label class="cookie-switch"><input type="checkbox" checked disabled aria-labelledby="cookie-cat-nec" aria-describedby="cookie-cat-nec-d"><span>Sempre ativos</span></label>
+    </div>
+    <div class="cookie-cat">
+      <div><h3 id="cookie-cat-ana">Análise</h3><p id="cookie-cat-ana-d">Medem páginas e interações de forma agregada (Google Analytics 4, Microsoft Clarity), sem nome, telefone ou conteúdo do formulário.</p></div>
+      <label class="cookie-switch"><input type="checkbox" data-cookie-cat="analytics" aria-labelledby="cookie-cat-ana" aria-describedby="cookie-cat-ana-d"><span>Permitir</span></label>
+    </div>
+    <div class="cookie-cat">
+      <div><h3 id="cookie-cat-mkt">Marketing</h3><p id="cookie-cat-mkt-d">Medem campanhas e permitem anúncios mais relevantes, se o site usar essas ferramentas.</p></div>
+      <label class="cookie-switch"><input type="checkbox" data-cookie-cat="marketing" aria-labelledby="cookie-cat-mkt" aria-describedby="cookie-cat-mkt-d"><span>Permitir</span></label>
+    </div>
+    <div class="cookie-banner__acoes">
+      <button type="button" class="btn btn--outline" data-cookie-acao="recusar">Recusar todos</button>
+      <button type="button" class="btn btn--outline" data-cookie-acao="salvar">Salvar escolhas</button>
+      <button type="button" class="btn btn--outline" data-cookie-acao="aceitar">Aceitar todos</button>
+    </div>
+  </div>
+</dialog>
+<p class="sr-only" id="cookie-live" role="status" aria-live="polite"></p>
+
+<script src="/agnaldo-previa/assets/js/main.js" defer></script>
+<script src="/agnaldo-previa/assets/js/cookies.js" defer></script>
+</body>
+</html>

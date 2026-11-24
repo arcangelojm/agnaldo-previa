@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Símbolo provisório">
+  <!-- PROVISÓRIO: símbolo neutro até o dono enviar a marca (C-27). Cores de docs/paleta.json. -->
+  <rect width="64" height="64" rx="14" fill="#0A3B49"/>
+  <circle cx="32" cy="32" r="18" fill="#7CE0D3"/>
+  <rect x="8" y="34" width="48" height="5" fill="#0A3B49"/>
+</svg>
