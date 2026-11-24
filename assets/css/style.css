@@ -1595,3 +1595,28 @@ main .type-grid+p:not([class]){margin-top:32px}
 .on-dark .cidade-painel>p a:hover,.on-dark .cidade-painel__topo h4 a:hover{color:var(--petrol-800)}
 .on-dark .cidade-painel__grupo{color:var(--petrol-600)}
 .cidade-painel__topo h4 a{display:inline-flex;align-items:center;min-height:44px}
+/* D-12 na home: cards principais com um link por cidade, painéis de serviços por cidade e bairros agrupados por cidade */
+.service-cidades{display:flex;flex-wrap:wrap;gap:8px}
+.service-cidade{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px 14px;border:1.5px solid var(--border-card);border-radius:var(--r-pill);font-size:.875rem;font-weight:700;line-height:1.2;color:var(--text);transition:background-color .18s var(--ease),border-color .18s var(--ease)}
+.service-cidade .icon{width:16px;height:16px;color:var(--petrol-600)}
+.on-dark .service-cidade{color:var(--text)}
+.service-cidade:hover,.on-dark .service-cidade:hover{background:var(--aqua-soft);border-color:var(--aqua-500);color:var(--text)}
+.card-grid .service-body>.service-cidades{align-self:end}
+.cidade-paineis--home{margin-top:32px}
+.cidade-painel__topo h3{margin:0;font-size:1.25rem;line-height:1.25}
+.cidade-painel__topo h3 a{display:inline-flex;align-items:center;min-height:44px;color:var(--text)}
+.on-dark .cidade-painel__topo h3,.on-dark .cidade-painel__topo h3 a{color:var(--text)}
+.on-dark .cidade-painel__topo h3 a:hover{color:var(--petrol-600)}
+.areas-cidades{display:grid;gap:28px}
+.areas-cidade h3{margin:0;font-size:1.25rem;line-height:1.25}
+.areas-cidade h3 a{display:inline-flex;align-items:center;min-height:44px;color:var(--text)}
+.areas-cidade h3 a:hover{color:var(--petrol-600)}
+.areas-cidade>p{margin:0 0 12px}
+.areas-cidade .areas-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:1024px){
+  .areas-cidades{grid-template-columns:3fr 2fr;gap:40px}
+  .areas-cidade:first-child .areas-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .areas-cidade:last-child .areas-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+.service-body .service-cidade,.on-dark .service-body .service-cidade{border:1.5px solid var(--petrol-600);text-decoration:none;color:var(--text);background:var(--white)}
+.service-body .service-cidade:hover{background:var(--aqua-soft);border-color:var(--petrol-800)}
