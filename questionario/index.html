@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Questionário do site | Agnaldo Higienização</title>
+<link rel="icon" href="../assets/marca/favicon.svg" type="image/svg+xml">
+<style>
+@font-face{font-family:'Manrope';src:url('../assets/fonts/manrope-latin-var.woff2') format('woff2');font-weight:400 800;font-display:swap}
+:root{--petroleo:#0A3B49;--petroleo-fundo:#062E3A;--link:#14607A;--aqua:#7CE0D3;--aqua-suave:#CFF3EC;--nevoa:#EEF6F8;--texto:#4C616A;--borda:#C9DCE1;--branco:#FCFEFE;--erro:#A3261F}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Manrope',system-ui,sans-serif;color:var(--texto);background:var(--nevoa);line-height:1.6;font-size:17px}
+a{color:var(--link)}
+.topo{background:var(--petroleo-fundo);color:var(--branco);padding:28px 16px 36px}
+.topo__in,.conteudo{max-width:760px;margin:0 auto}
+.topo img{height:36px;width:auto;display:block;margin-bottom:24px}
+h1{font-size:clamp(28px,6vw,40px);line-height:1.15;margin:0 0 12px;color:var(--branco);font-weight:800;text-wrap:balance}
+.topo p{margin:0 0 10px;color:#D9EEF1;max-width:62ch}
+.progresso{margin-top:18px;font-weight:700;color:var(--aqua)}
+.conteudo{padding:24px 16px 64px}
+fieldset{border:0;background:var(--branco);border-radius:18px;padding:24px 20px;margin:0 0 20px;box-shadow:0 1px 2px rgba(6,46,58,.06),0 8px 24px rgba(6,46,58,.05)}
+legend{float:left;width:100%;padding:0;font-size:22px;font-weight:800;color:var(--petroleo);line-height:1.25;margin:0 0 6px}
+legend+*{clear:left}
+.intro{margin:0 0 18px;font-size:15px}
+.q{margin:0 0 20px}
+.q:last-child{margin-bottom:0}
+.q>label,.q>.rot{display:block;font-weight:700;color:var(--petroleo);margin-bottom:6px;font-size:16px}
+.dica{display:block;font-size:14px;margin:-2px 0 8px;color:var(--texto)}
+input[type=text],input[type=email],input[type=tel],input[type=url],input[type=number],textarea,select{width:100%;font:inherit;font-size:16px;color:var(--petroleo);background:#FAFDFD;border:1.5px solid var(--borda);border-radius:12px;padding:12px 14px;min-height:48px}
+textarea{min-height:110px;resize:vertical}
+input:focus-visible,textarea:focus-visible,select:focus-visible,button:focus-visible,.op input:focus-visible+span{outline:3px solid var(--link);outline-offset:2px}
+.ops{display:grid;grid-template-columns:1fr;gap:8px}
+@media(min-width:600px){.ops--2{grid-template-columns:1fr 1fr}}
+.op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:1.5px solid var(--borda);border-radius:12px;cursor:pointer;background:#FAFDFD;color:var(--petroleo)}
+.op input{width:20px;height:20px;accent-color:var(--link);flex:none;margin:0}
+.op:has(input:checked){border-color:var(--link);background:var(--aqua-suave)}
+.tabela{display:grid;gap:10px}
+.linha{display:grid;grid-template-columns:1fr;gap:6px;align-items:center}
+@media(min-width:600px){.linha{grid-template-columns:1fr 220px}}
+.linha span{font-weight:600;color:var(--petroleo)}
+.dep{border-top:1px solid var(--borda);padding-top:16px;margin-top:16px}
+.acoes{background:var(--petroleo);color:var(--branco);border-radius:18px;padding:24px 20px}
+.acoes h2{color:var(--branco);margin:0 0 8px;font-size:22px}
+.acoes p{color:#D9EEF1;margin:0 0 16px}
+.botoes{display:grid;gap:10px}
+@media(min-width:600px){.botoes{grid-template-columns:1fr 1fr 1fr}}
+button{font:inherit;font-weight:700;font-size:16px;min-height:48px;border-radius:999px;border:2px solid var(--aqua);padding:10px 18px;cursor:pointer;background:transparent;color:var(--branco);transition:background .2s ease,color .2s ease}
+button.primario{background:var(--aqua);color:var(--petroleo-fundo)}
+button:hover{background:var(--aqua-suave);color:var(--petroleo-fundo);border-color:var(--aqua-suave)}
+.aviso{min-height:1.6em;margin-top:12px;font-weight:700;color:var(--aqua)}
+.salvo{font-size:14px;color:#D9EEF1;margin-top:12px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topo">
+  <div class="topo__in">
+    <img src="../assets/marca/logo-branca.svg" alt="Agnaldo Higienização" width="220" height="36">
+    <h1>Questionário para o site da Agnaldo Higienização</h1>
+    <p>Estas respostas completam as informações que hoje aparecem marcadas no site de prévia. Responda só o que souber; o que deixar em branco a gente conversa depois.</p>
+    <p>As respostas ficam guardadas neste aparelho enquanto você preenche, então dá para parar e continuar depois no mesmo navegador. No fim da página, envie tudo pelo WhatsApp ou baixe o arquivo.</p>
+    <p class="progresso" id="progresso" aria-live="polite"></p>
+  </div>
+</header>
+
+<main class="conteudo">
+<form id="q" autocomplete="on" novalidate>
+
+<fieldset>
+  <legend>1. Empresa</legend>
+  <p class="intro">Dados que aparecem no rodapé, na página Sobre e nas políticas do site.</p>
+  <div class="q"><label for="q-nome">O nome que o cliente vê é "Agnaldo Higienização"?</label><span class="dica">Se o nome no Google e no Instagram for diferente, escreva aqui.</span><input type="text" id="q-nome" name="Nome da marca"></div>
+  <div class="q"><label for="q-razao">Razão social</label><input type="text" id="q-razao" name="Razão social"></div>
+  <div class="q"><label for="q-cnpj">CNPJ</label><input type="text" id="q-cnpj" name="CNPJ" inputmode="numeric"></div>
+  <div class="q"><label for="q-dono">Nome do responsável e cargo</label><span class="dica">Ex.: Agnaldo da Silva, proprietário.</span><input type="text" id="q-dono" name="Responsável e cargo"></div>
+  <div class="q"><label for="q-ano">Em que ano a empresa começou?</label><input type="text" id="q-ano" name="Ano de início" inputmode="numeric"></div>
+  <div class="q"><label for="q-hist">Conte a história da empresa em poucas linhas</label><span class="dica">Como começou, quem trabalha, o que mudou de lá para cá.</span><textarea id="q-hist" name="História da empresa"></textarea></div>
+</fieldset>
+
+<fieldset>
+  <legend>2. Contato e endereço</legend>
+  <p class="intro">Aparecem no topo do site, nos botões de WhatsApp e no Google.</p>
+  <div class="q"><label for="q-wa">Número do WhatsApp que recebe os pedidos</label><input type="tel" id="q-wa" name="WhatsApp" inputmode="tel"></div>
+  <div class="q"><label for="q-tel">Telefone fixo, se tiver</label><input type="tel" id="q-tel" name="Telefone fixo" inputmode="tel"></div>
+  <div class="q"><label for="q-email">E-mail que recebe os pedidos do formulário do site</label><input type="email" id="q-email" name="E-mail dos pedidos"></div>
+  <div class="q"><label for="q-email2">E-mail que pode aparecer no site</label><span class="dica">Pode ser o mesmo. Ele também é o contato para assuntos de dados pessoais (LGPD).</span><input type="email" id="q-email2" name="E-mail público"></div>
+  <div class="q"><label for="q-end">Endereço completo da sede (rua, número, bairro, CEP)</label><input type="text" id="q-end" name="Endereço da sede"></div>
+  <div class="q"><span class="rot" id="r-loja">O cliente pode ir até o endereço?</span>
+    <div class="ops ops--2" role="radiogroup" aria-labelledby="r-loja">
+      <label class="op"><input type="radio" name="Recebe clientes no endereço" value="Sim, é aberto ao público"><span>Sim, é aberto ao público</span></label>
+      <label class="op"><input type="radio" name="Recebe clientes no endereço" value="Não, atendo só na casa do cliente"><span>Não, atendo só na casa do cliente</span></label>
+    </div></div>
+  <div class="q"><label for="q-hor">Dias e horários de atendimento</label><span class="dica">Ex.: segunda a sexta, 8h às 18h; sábado, 8h às 12h.</span><input type="text" id="q-hor" name="Horário de atendimento"></div>
+  <div class="q"><label for="q-ig">Instagram e outras redes</label><input type="text" id="q-ig" name="Redes sociais"></div>
+  <div class="q"><label for="q-gmb">Link do perfil no Google (Google Meu Negócio), se tiver</label><input type="url" id="q-gmb" name="Perfil no Google"></div>
+  <div class="q"><label for="q-dom">Já tem um endereço de site (domínio)? Qual?</label><span class="dica">Se ainda não tiver, escreva um ou dois nomes que gostaria.</span><input type="text" id="q-dom" name="Domínio"></div>
+</fieldset>
+
+<fieldset>
+  <legend>3. Serviços</legend>
+  <p class="intro">Marque tudo o que a empresa faz hoje. O site tem uma página para cada um dos oito primeiros.</p>
+  <div class="q"><span class="rot" id="r-serv">Serviços que a empresa faz</span>
+    <div class="ops ops--2" role="group" aria-labelledby="r-serv">
+      <label class="op"><input type="checkbox" name="Serviços" value="Sofá"><span>Sofá</span></label>
+      <label class="op"><input type="checkbox" name="Serviços" value="Tapetes"><span>Tapetes</span></label>
+      <label class="op"><input type="checkbox" name="Serviços" value="Cortinas"><span>Cortinas</span></label>
+      <label class="op"><input type="checkbox" name="Serviços" value="Colchão"><span>Colchão</span></label>
+      <label class="op"><input type="checkbox" name="Serviços" value="Poltrona"><span>Poltrona</span></label>
+      <label class="op"><input type="checkbox" name="Serviços" value="Cadeiras"><span>Cadeiras</span></label>
+      <label class="op"><input type="checkbox" name="Serviços" value="Persianas"><span>Persianas</span></label>
+      <label class="op"><input type="checkbox" name="Serviços" value="Carpete"><span>Carpete</span></label>
+      <label class="op"><input type="checkbox" name="Serviços" value="Impermeabilização de estofados"><span>Impermeabilização de estofados</span></label>
+      <label class="op"><input type="checkbox" name="Serviços" value="Bancos de carro"><span>Bancos de carro</span></label>
+      <label class="op"><input type="checkbox" name="Serviços" value="Edredom"><span>Edredom</span></label>
+      <label class="op"><input type="checkbox" name="Serviços" value="Colchão de berço e carrinho de bebê"><span>Colchão de berço e carrinho de bebê</span></label>
+    </div></div>
+  <div class="q"><label for="q-serv-outros">Outros serviços que não estão na lista</label><input type="text" id="q-serv-outros" name="Outros serviços"></div>
+  <div class="q"><label for="q-serv-top">Quais são os três serviços que mais vendem?</label><input type="text" id="q-serv-top" name="Serviços que mais vendem"></div>
+</fieldset>
+
+<fieldset>
+  <legend>4. Como é o atendimento</legend>
+  <p class="intro">O site explica ao cliente o que acontece no dia. Marque o que vale para vocês.</p>
+  <div class="q"><span class="rot" id="r-atend">Como cada peça é atendida</span>
+    <div class="ops" role="group" aria-labelledby="r-atend">
+      <label class="op"><input type="checkbox" name="Atendimento" value="Sofá, poltrona, colchão e cadeiras são limpos na casa do cliente"><span>Sofá, poltrona, colchão e cadeiras são limpos na casa do cliente</span></label>
+      <label class="op"><input type="checkbox" name="Atendimento" value="Tapete é retirado, lavado e devolvido"><span>Tapete é retirado, lavado e devolvido</span></label>
+      <label class="op"><input type="checkbox" name="Atendimento" value="Tapete também pode ser limpo na casa do cliente"><span>Tapete também pode ser limpo na casa do cliente</span></label>
+      <label class="op"><input type="checkbox" name="Atendimento" value="Cortinas: a equipe tira e recoloca"><span>Cortinas: a equipe tira e recoloca</span></label>
+      <label class="op"><input type="checkbox" name="Atendimento" value="Persianas: a equipe tira e recoloca"><span>Persianas: a equipe tira e recoloca</span></label>
+      <label class="op"><input type="checkbox" name="Atendimento" value="Atende várias peças no mesmo dia"><span>Atende várias peças no mesmo dia</span></label>
+    </div></div>
+  <div class="q"><label for="q-atend-obs">Algo mais sobre o atendimento</label><span class="dica">Ex.: quem afasta os móveis, se precisa de tomada ou de água, atendimento em prédio.</span><textarea id="q-atend-obs" name="Observações do atendimento"></textarea></div>
+</fieldset>
+
+<fieldset>
+  <legend>5. Cidades e bairros</legend>
+  <p class="intro">O site tem páginas para os bairros abaixo. Confirme se atendem e diga os bairros onde mais trabalham.</p>
+  <div class="q"><span class="rot" id="r-cid">Atendem a cidade inteira?</span>
+    <div class="ops ops--2" role="group" aria-labelledby="r-cid">
+      <label class="op"><input type="checkbox" name="Cidade inteira" value="Cuiabá inteira"><span>Cuiabá inteira</span></label>
+      <label class="op"><input type="checkbox" name="Cidade inteira" value="Várzea Grande inteira"><span>Várzea Grande inteira</span></label>
+    </div></div>
+  <div class="q"><span class="rot" id="r-bairros">Bairros que já estão no site</span>
+    <div class="ops ops--2" role="group" aria-labelledby="r-bairros">
+      <label class="op"><input type="checkbox" name="Bairros confirmados" value="Jardim das Américas (Cuiabá)"><span>Jardim das Américas (Cuiabá)</span></label>
+      <label class="op"><input type="checkbox" name="Bairros confirmados" value="Duque de Caxias (Cuiabá)"><span>Duque de Caxias (Cuiabá)</span></label>
+      <label class="op"><input type="checkbox" name="Bairros confirmados" value="Goiabeiras (Cuiabá)"><span>Goiabeiras (Cuiabá)</span></label>
+      <label class="op"><input type="checkbox" name="Bairros confirmados" value="Santa Rosa (Cuiabá)"><span>Santa Rosa (Cuiabá)</span></label>
+      <label class="op"><input type="checkbox" name="Bairros confirmados" value="Bosque da Saúde (Cuiabá)"><span>Bosque da Saúde (Cuiabá)</span></label>
+      <label class="op"><input type="checkbox" name="Bairros confirmados" value="Jardim Itália (Cuiabá)"><span>Jardim Itália (Cuiabá)</span></label>
+      <label class="op"><input type="checkbox" name="Bairros confirmados" value="Cristo Rei (Várzea Grande)"><span>Cristo Rei (Várzea Grande)</span></label>
+      <label class="op"><input type="checkbox" name="Bairros confirmados" value="Jardim Glória (Várzea Grande)"><span>Jardim Glória (Várzea Grande)</span></label>
+      <label class="op"><input type="checkbox" name="Bairros confirmados" value="Parque do Lago (Várzea Grande)"><span>Parque do Lago (Várzea Grande)</span></label>
+      <label class="op"><input type="checkbox" name="Bairros confirmados" value="Costa Verde (Várzea Grande)"><span>Costa Verde (Várzea Grande)</span></label>
+    </div></div>
+  <div class="q"><label for="q-bairros-top">Bairros onde vocês mais atendem (pode citar outros)</label><textarea id="q-bairros-top" name="Bairros mais atendidos"></textarea></div>
+  <div class="q"><label for="q-outras-cid">Atendem outras cidades? Quais?</label><input type="text" id="q-outras-cid" name="Outras cidades"></div>
+</fieldset>
+
+<fieldset>
+  <legend>6. Orçamento, preço e pagamento</legend>
+  <div class="q"><span class="rot" id="r-orc">Como o cliente recebe o orçamento?</span>
+    <div class="ops" role="group" aria-labelledby="r-orc">
+      <label class="op"><input type="checkbox" name="Orçamento" value="Por fotos no WhatsApp"><span>Por fotos no WhatsApp</span></label>
+      <label class="op"><input type="checkbox" name="Orçamento" value="Com visita antes do serviço"><span>Com visita antes do serviço</span></label>
+      <label class="op"><input type="checkbox" name="Orçamento" value="O valor passado por foto é o mesmo cobrado no dia"><span>O valor passado por foto é o mesmo cobrado no dia</span></label>
+    </div></div>
+  <div class="q"><label for="q-calc">Como o preço é calculado em cada peça?</label><span class="dica">Ex.: sofá por número de lugares; tapete por metro quadrado; cortina por largura e altura.</span><textarea id="q-calc" name="Cálculo do preço"></textarea></div>
+  <div class="q"><label for="q-precos">Podemos mostrar preços "a partir de" no site? Se sim, quais?</label><textarea id="q-precos" name="Preços de referência"></textarea></div>
+  <div class="q"><label for="q-desloc">Cobram deslocamento ou taxa mínima? Em quais casos?</label><input type="text" id="q-desloc" name="Deslocamento e taxa mínima"></div>
+  <div class="q"><span class="rot" id="r-pag">Formas de pagamento</span>
+    <div class="ops ops--2" role="group" aria-labelledby="r-pag">
+      <label class="op"><input type="checkbox" name="Pagamento" value="Pix"><span>Pix</span></label>
+      <label class="op"><input type="checkbox" name="Pagamento" value="Dinheiro"><span>Dinheiro</span></label>
+      <label class="op"><input type="checkbox" name="Pagamento" value="Cartão de débito"><span>Cartão de débito</span></label>
+      <label class="op"><input type="checkbox" name="Pagamento" value="Cartão de crédito"><span>Cartão de crédito</span></label>
+      <label class="op"><input type="checkbox" name="Pagamento" value="Parcelado no cartão"><span>Parcelado no cartão</span></label>
+      <label class="op"><input type="checkbox" name="Pagamento" value="Emite nota fiscal"><span>Emite nota fiscal</span></label>
+    </div></div>
+</fieldset>
+
+<fieldset>
+  <legend>7. Prazos</legend>
+  <p class="intro">Uma média já ajuda. Se depender do tecido ou do tempo, explique.</p>
+  <div class="q"><label for="q-p-sofa">Quanto tempo leva a limpeza de um sofá de 3 lugares?</label><input type="text" id="q-p-sofa" name="Duração da limpeza do sofá"></div>
+  <div class="q"><label for="q-p-sec">Em quanto tempo o sofá fica seco para usar?</label><input type="text" id="q-p-sec" name="Secagem do sofá"></div>
+  <div class="q"><label for="q-p-tap">Em quantos dias o tapete volta para casa?</label><input type="text" id="q-p-tap" name="Prazo do tapete"></div>
+  <div class="q"><label for="q-p-cort">Em quantos dias as cortinas voltam para a janela?</label><input type="text" id="q-p-cort" name="Prazo das cortinas"></div>
+  <div class="q"><label for="q-p-agenda">Com quantos dias de antecedência costuma ter vaga na agenda?</label><input type="text" id="q-p-agenda" name="Antecedência da agenda"></div>
+</fieldset>
+
+<fieldset>
+  <legend>8. Como o serviço é feito</legend>
+  <p class="intro">O cliente quer saber o que vai acontecer com a peça dele. Escreva do seu jeito.</p>
+  <div class="q"><label for="q-passo">Passo a passo da limpeza de um sofá, do começo ao fim</label><textarea id="q-passo" name="Passo a passo do sofá"></textarea></div>
+  <div class="q"><label for="q-tapete">E do tapete, como é?</label><textarea id="q-tapete" name="Passo a passo do tapete"></textarea></div>
+  <div class="q"><label for="q-equip">Equipamentos e produtos usados</label><span class="dica">Ex.: extratora, aspirador, marca dos produtos.</span><textarea id="q-equip" name="Equipamentos e produtos"></textarea></div>
+  <div class="q"><label for="q-bebe">Os produtos podem ser usados em casa com bebê, pet ou pessoa com rinite? Precisa de algum cuidado?</label><textarea id="q-bebe" name="Bebê, pet e alergia"></textarea></div>
+</fieldset>
+
+<fieldset>
+  <legend>9. Materiais e peças</legend>
+  <p class="intro">Diga se a empresa faz, não faz ou se depende de avaliação.</p>
+  <div class="tabela">
+    <div class="linha"><span id="m1">Sofá de couro natural</span><select name="Material: couro natural" aria-labelledby="m1"><option value="">Escolha</option><option>Faz</option><option>Não faz</option><option>Depende de avaliação</option></select></div>
+    <div class="linha"><span id="m2">Couro sintético</span><select name="Material: couro sintético" aria-labelledby="m2"><option value="">Escolha</option><option>Faz</option><option>Não faz</option><option>Depende de avaliação</option></select></div>
+    <div class="linha"><span id="m3">Suede e veludo</span><select name="Material: suede e veludo" aria-labelledby="m3"><option value="">Escolha</option><option>Faz</option><option>Não faz</option><option>Depende de avaliação</option></select></div>
+    <div class="linha"><span id="m4">Linho</span><select name="Material: linho" aria-labelledby="m4"><option value="">Escolha</option><option>Faz</option><option>Não faz</option><option>Depende de avaliação</option></select></div>
+    <div class="linha"><span id="m5">Sofá retrátil e reclinável elétrico</span><select name="Peça: retrátil e reclinável elétrico" aria-labelledby="m5"><option value="">Escolha</option><option>Faz</option><option>Não faz</option><option>Depende de avaliação</option></select></div>
+    <div class="linha"><span id="m6">Tapete persa ou feito à mão</span><select name="Peça: tapete persa ou feito à mão" aria-labelledby="m6"><option value="">Escolha</option><option>Faz</option><option>Não faz</option><option>Depende de avaliação</option></select></div>
+    <div class="linha"><span id="m7">Tapete de sisal, juta ou fibra natural</span><select name="Peça: tapete de fibra natural" aria-labelledby="m7"><option value="">Escolha</option><option>Faz</option><option>Não faz</option><option>Depende de avaliação</option></select></div>
+    <div class="linha"><span id="m8">Tapete de lã</span><select name="Peça: tapete de lã" aria-labelledby="m8"><option value="">Escolha</option><option>Faz</option><option>Não faz</option><option>Depende de avaliação</option></select></div>
+    <div class="linha"><span id="m9">Cortina blackout</span><select name="Peça: cortina blackout" aria-labelledby="m9"><option value="">Escolha</option><option>Faz</option><option>Não faz</option><option>Depende de avaliação</option></select></div>
+    <div class="linha"><span id="m10">Persiana de madeira</span><select name="Peça: persiana de madeira" aria-labelledby="m10"><option value="">Escolha</option><option>Faz</option><option>Não faz</option><option>Depende de avaliação</option></select></div>
+    <div class="linha"><span id="m11">Persiana motorizada</span><select name="Peça: persiana motorizada" aria-labelledby="m11"><option value="">Escolha</option><option>Faz</option><option>Não faz</option><option>Depende de avaliação</option></select></div>
+    <div class="linha"><span id="m12">Almofadas, puff e cabeceira de cama</span><select name="Peça: almofadas, puff e cabeceira" aria-labelledby="m12"><option value="">Escolha</option><option>Faz</option><option>Não faz</option><option>Depende de avaliação</option></select></div>
+  </div>
+  <div class="q dep"><label for="q-naofaz">O que a empresa não faz ou não garante?</label><span class="dica">Ex.: mancha antiga de tinta, tecido rasgado, desbotamento de sol.</span><textarea id="q-naofaz" name="O que não faz"></textarea></div>
+  <div class="q"><label for="q-garantia">Se o cliente não ficar satisfeito, o que acontece?</label><span class="dica">Ex.: volta para refazer o ponto em até 7 dias.</span><textarea id="q-garantia" name="Garantia ou revisão"></textarea></div>
+</fieldset>
+
+<fieldset>
+  <legend>10. Empresas</legend>
+  <div class="q"><span class="rot" id="r-emp">Atendem empresas (escritórios, clínicas, escolas, hotéis)?</span>
+    <div class="ops ops--2" role="radiogroup" aria-labelledby="r-emp">
+      <label class="op"><input type="radio" name="Atende empresas" value="Sim"><span>Sim</span></label>
+      <label class="op"><input type="radio" name="Atende empresas" value="Não"><span>Não</span></label>
+    </div></div>
+  <div class="q"><label for="q-emp">Se sim: que tipo de empresa, se atendem fora do horário comercial e se fazem contrato mensal</label><textarea id="q-emp" name="Detalhes do atendimento a empresas"></textarea></div>
+</fieldset>
+
+<fieldset>
+  <legend>11. Provas e diferenciais</legend>
+  <p class="intro">O site só mostra números e depoimentos reais. Se não tiver, deixe em branco.</p>
+  <div class="q"><label for="q-clientes">Quantos clientes já atenderam, mais ou menos?</label><input type="text" id="q-clientes" name="Clientes atendidos"></div>
+  <div class="q"><label for="q-nota">Nota e número de avaliações no Google</label><input type="text" id="q-nota" name="Avaliações no Google"></div>
+  <div class="q"><label for="q-dif">Por que o cliente escolhe vocês e não outra empresa?</label><span class="dica">Três motivos concretos, por exemplo: o dono vai em todo serviço, orçamento na hora, atendimento no sábado.</span><textarea id="q-dif" name="Diferenciais"></textarea></div>
+  <div class="q"><label for="q-dep">Depoimentos de clientes que autorizaram publicar</label><span class="dica">Nome, bairro e o que a pessoa disse. Pode colar prints pelo WhatsApp depois.</span><textarea id="q-dep" name="Depoimentos"></textarea></div>
+</fieldset>
+
+<fieldset>
+  <legend>12. Fotos, vídeos e logo</legend>
+  <div class="q"><span class="rot" id="r-fotos">Autoriza usar no site as fotos e os vídeos do Instagram da empresa?</span>
+    <div class="ops ops--2" role="radiogroup" aria-labelledby="r-fotos">
+      <label class="op"><input type="radio" name="Autoriza fotos do Instagram" value="Sim, autorizo"><span>Sim, autorizo</span></label>
+      <label class="op"><input type="radio" name="Autoriza fotos do Instagram" value="Não autorizo"><span>Não autorizo</span></label>
+    </div></div>
+  <div class="q"><span class="rot" id="r-logo">A empresa tem logo?</span>
+    <div class="ops ops--2" role="radiogroup" aria-labelledby="r-logo">
+      <label class="op"><input type="radio" name="Tem logo" value="Sim, vou enviar o arquivo"><span>Sim, vou enviar o arquivo</span></label>
+      <label class="op"><input type="radio" name="Tem logo" value="Não, quero uma proposta"><span>Não, quero uma proposta</span></label>
+    </div></div>
+  <div class="q"><label for="q-obs">Algo que viu na prévia do site e quer mudar?</label><textarea id="q-obs" name="Comentários sobre a prévia"></textarea></div>
+  <p class="intro">Fotos de antes e depois, vídeos do serviço, fotos da equipe e o arquivo da logo vão melhor pelo WhatsApp, junto com as respostas.</p>
+</fieldset>
+
+<section class="acoes" aria-labelledby="t-enviar">
+  <h2 id="t-enviar">Enviar as respostas</h2>
+  <p>O botão do WhatsApp abre uma mensagem pronta com tudo o que você respondeu. Escolha a conversa de quem está fazendo o seu site e toque em enviar. Se a mensagem ficar grande demais, use "Copiar respostas" e cole na conversa.</p>
+  <div class="botoes">
+    <button type="button" class="primario" id="b-wa">Enviar respostas pelo WhatsApp</button>
+    <button type="button" id="b-copiar">Copiar respostas</button>
+    <button type="button" id="b-baixar">Baixar respostas em arquivo</button>
+  </div>
+  <p class="aviso" id="aviso" role="status" aria-live="polite"></p>
+  <p class="salvo">Suas respostas ficam salvas neste navegador até você enviar.</p>
+</section>
+
+</form>
+</main>
+
+<script>
+(function () {
+  var CHAVE = "agnaldo-questionario-v1";
+  var form = document.getElementById("q");
+  var aviso = document.getElementById("aviso");
+  var prog = document.getElementById("progresso");
+  var campos = form.querySelectorAll("input, textarea, select");
+
+  function salvar() {
+    var d = {};
+    campos.forEach(function (c, i) {
+      if (c.type === "checkbox" || c.type === "radio") d[i] = c.checked;
+      else d[i] = c.value;
+    });
+    try { localStorage.setItem(CHAVE, JSON.stringify(d)); } catch (e) {}
+    progresso();
+  }
+  function carregar() {
+    var d = null;
+    try { d = JSON.parse(localStorage.getItem(CHAVE) || "null"); } catch (e) {}
+    if (!d) return;
+    campos.forEach(function (c, i) {
+      if (!(i in d)) return;
+      if (c.type === "checkbox" || c.type === "radio") c.checked = !!d[i];
+      else c.value = d[i];
+    });
+  }
+  function respostas() {
+    var linhas = ["Questionário do site - Agnaldo Higienização", ""];
+    form.querySelectorAll("fieldset").forEach(function (fs) {
+      var bloco = [];
+      var vistos = {};
+      fs.querySelectorAll("input, textarea, select").forEach(function (c) {
+        var nome = c.name;
+        if (!nome || vistos[nome]) return;
+        var valor;
+        if (c.type === "checkbox" || c.type === "radio") {
+          vistos[nome] = true;
+          var sel = [];
+          fs.querySelectorAll('[name="' + nome + '"]').forEach(function (x) { if (x.checked) sel.push(x.value); });
+          valor = sel.join("; ");
+        } else {
+          valor = c.value.trim();
+        }
+        if (valor) bloco.push(nome + ": " + valor);
+      });
+      if (bloco.length) {
+        linhas.push("== " + fs.querySelector("legend").textContent + " ==");
+        linhas = linhas.concat(bloco);
+        linhas.push("");
+      }
+    });
+    return linhas.join("\n").trim();
+  }
+  function progresso() {
+    var total = 0, feitos = 0;
+    form.querySelectorAll("fieldset").forEach(function (fs) {
+      total++;
+      var tem = false;
+      fs.querySelectorAll("input, textarea, select").forEach(function (c) {
+        if ((c.type === "checkbox" || c.type === "radio") ? c.checked : c.value.trim()) tem = true;
+      });
+      if (tem) feitos++;
+    });
+    prog.textContent = feitos + " de " + total + " partes com resposta";
+  }
+  function avisar(t) { aviso.textContent = t; }
+
+  carregar();
+  progresso();
+  form.addEventListener("input", salvar);
+  form.addEventListener("change", salvar);
+  form.addEventListener("submit", function (e) { e.preventDefault(); });
+
+  document.getElementById("b-wa").addEventListener("click", function () {
+    var t = respostas();
+    if (t.split("\n").length < 3) { avisar("Responda pelo menos uma pergunta antes de enviar."); return; }
+    window.open("https://wa.me/?text=" + encodeURIComponent(t), "_blank", "noopener");
+    avisar("Abrimos o WhatsApp com as respostas. Escolha a conversa e envie.");
+  });
+  document.getElementById("b-copiar").addEventListener("click", function () {
+    var t = respostas();
+    var ok = function () { avisar("Respostas copiadas. Cole na conversa do WhatsApp ou num e-mail."); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(t).then(ok, function () { avisar("Não foi possível copiar. Use o botão de baixar o arquivo."); });
+    } else {
+      var a = document.createElement("textarea"); a.value = t; document.body.appendChild(a); a.select();
+      try { document.execCommand("copy"); ok(); } catch (e) { avisar("Não foi possível copiar. Use o botão de baixar o arquivo."); }
+      document.body.removeChild(a);
+    }
+  });
+  document.getElementById("b-baixar").addEventListener("click", function () {
+    var blob = new Blob([respostas()], { type: "text/plain;charset=utf-8" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "respostas-agnaldo-higienizacao.txt";
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+    avisar("Arquivo baixado. Envie pelo WhatsApp junto com as fotos.");
+  });
+})();
+</script>
+</body>
+</html>
