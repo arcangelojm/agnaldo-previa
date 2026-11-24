@@ -41,7 +41,7 @@
   --hairline:1px solid rgba(10,59,73,.06);
 
   --container:1200px;
-  --container-header:1360px;
+  --container-header:1200px;   /* D-12: igual ao conteúdo, para o cabeçalho alinhar com a margem das páginas */
   --pad:16px;
   --sec:clamp(3.5rem, 2.465rem + 4.42vw, 6rem);
   --header-h:64px;
@@ -1543,3 +1543,55 @@ main:not([data-sop-tipo=home]) .card-grid>*{height:100%}
 
 /* D-11 R9: parágrafo sem classe logo depois de uma type-grid ganha o mesmo respiro do section-close */
 main .type-grid+p:not([class]){margin-top:32px}
+/* D-12: mega menu de serviços organizado por cidade (Cuiabá | Várzea Grande), cada cidade com Estofados e Tapetes e janelas */
+.mega__grid--cidades{display:grid;gap:20px}
+.mega__cid-topo{display:grid;grid-template-columns:40px minmax(0,1fr) 16px;align-items:center;column-gap:12px;min-height:56px;padding:8px 14px 8px 8px;border-radius:var(--r-md);background:var(--bg-soft);color:var(--text);transition:background-color .18s var(--ease)}
+.mega__cid-ico{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--petrol-800);color:var(--aqua-500)}
+.mega__cid-ico .icon{width:18px;height:18px}
+.mega__cid-txt strong{display:block;font-size:1rem;font-weight:800;line-height:1.25;color:var(--text)}
+.mega__cid-txt>span{display:block;margin-top:2px;font-size:.8125rem;line-height:1.4;color:var(--text-muted)}
+.mega__cid-topo>.icon{width:16px;height:16px;color:var(--petrol-600);transition:transform .2s var(--ease)}
+.mega__cid-topo:hover{background:var(--bg-soft-2);color:var(--text)}
+.mega__cid-topo:hover>.icon{transform:translateX(3px)}
+.mega__cid-topo[aria-current="page"],.mega__item[aria-current="page"]{box-shadow:inset 0 0 0 2px var(--aqua-500)}
+.mega__cid-grupos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 20px;margin-top:12px}
+.mega__grupo{margin:0 0 4px;padding:0 10px;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--petrol-600)}
+.mega__grid--cidades .mega__item{grid-template-columns:32px minmax(0,1fr);align-items:center;padding:6px 10px}
+.mega__grid--cidades .mega__ico{width:32px;height:32px}
+.mega__grid--cidades .mega__txt{padding-top:0}
+@media (max-width:1023px){
+  .mega__grid--cidades .mega__grupo{padding:0}
+  .mega__grid--cidades .mega__item{padding:6px 0}
+  .mega__faixa>.mega__empresa{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:700;color:var(--petrol-600)}
+  .mega__faixa{flex-wrap:wrap;column-gap:24px}
+}
+@media (max-width:479px){.mega__cid-grupos{grid-template-columns:1fr;gap:4px}}
+@media (min-width:1024px){
+  .mega__grid--cidades{grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;padding:6px 0 4px}
+  .mega__cid{position:relative}
+  .mega__cid+.mega__cid::before{content:"";position:absolute;left:-24px;top:0;bottom:0;border-left:1px solid var(--border)}
+  .mega__cid-grupos{gap:0 24px;margin-top:16px}
+  .mega__faixa .mega__empresa{font-weight:700}
+}
+/* D-12: rodapé com os serviços separados por cidade */
+.footer-cidades{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+@media (min-width:1024px){.footer-grid{grid-template-columns:minmax(0,2.1fr) repeat(3,minmax(0,1fr))}}
+/* D-12: /servicos/ com um painel por cidade (mesma estrutura nas duas) */
+.cidade-paineis{display:grid;gap:20px;margin-top:24px}
+.cidade-painel{padding:24px 20px;border-radius:var(--r-card);background:var(--white);color:var(--text-body)}
+.cidade-painel__topo{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.cidade-painel__topo h4{margin:0;font-size:1.25rem;line-height:1.25}
+.cidade-painel__topo h4 a{color:var(--text)}
+.cidade-painel__topo h4 a:hover{color:var(--petrol-600)}
+.cidade-painel>p{margin:0 0 16px}
+.cidade-painel__grupos{display:grid;gap:16px 24px}
+.cidade-painel__grupo{margin:0 0 6px;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--petrol-600)}
+.cidade-painel .hub-links{grid-template-columns:1fr}
+@media (min-width:600px){.cidade-painel__grupos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1024px){.cidade-paineis{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.cidade-painel{padding:28px}}
+.on-dark .cidade-painel>p{color:var(--text-body)}
+.on-dark .cidade-painel>p a{color:var(--petrol-600)}
+.on-dark .cidade-painel__topo h4,.on-dark .cidade-painel__topo h4 a{color:var(--text)}
+.on-dark .cidade-painel>p a:hover,.on-dark .cidade-painel__topo h4 a:hover{color:var(--petrol-800)}
+.on-dark .cidade-painel__grupo{color:var(--petrol-600)}
+.cidade-painel__topo h4 a{display:inline-flex;align-items:center;min-height:44px}
